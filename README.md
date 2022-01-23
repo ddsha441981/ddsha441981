@@ -1,7 +1,7 @@
 [![MasterHead](https://www.snowbound.com/blog/wp-content/uploads/2012/10/java_banner_1-980x360.png)]("https://ddsha441981.io")
 <h1 align="center">Hi 👋, I'm Deendayal Kumawat</h1>
 <h3 align="center">A passionate backend java developer from India</h3>
-<img align="left" alt="coding" width="400" src="http://moonscoffeeandtea.com/wp-content/uploads/Coffee-cup-Anim.gif">
+<img align="left" alt="coding" width="300" src="http://moonscoffeeandtea.com/wp-content/uploads/Coffee-cup-Anim.gif">
 <img align="right" alt="coding" width="400" src="https://cdn.dribbble.com/users/926537/screenshots/4502924/python-2.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ddsha441981&label=Profile%20views&color=0e75b6&style=flat" alt="ddsha441981" /> </p>
