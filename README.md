@@ -24,7 +24,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/https://www.linkdlin.com/in/deendayal-kumawat-68553287" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkdlin.com/in/deendayal-kumawat-68553287" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/deendayal-kumawat-68553287/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkdlin.com/in/deendayal-kumawat-68553287/" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/https://stackoverflow.com/users/7328484/deendayal-kumawat" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="https://stackoverflow.com/users/7328484/deendayal-kumawat" height="30" width="40" /></a>
 <a href="https://fb.com/karthik.kumawat.7" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="karthik.kumawat.7" height="30" width="40" /></a>
 <a href="https://instagram.com/u_441981" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="u_441981" height="30" width="40" /></a>
