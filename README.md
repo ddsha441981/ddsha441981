@@ -6,7 +6,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ddsha441981&label=Profile%20views&color=0e75b6&style=flat" alt="ddsha441981" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=ddsha441981" alt="ddsha441981" /></a> </p>
+<!-- <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=ddsha441981" alt="ddsha441981" /></a> </p> -->
 
 - 🌱 I’m currently learning **SpringBoot Hibernate MicroServices Angular Node Js and React js**
 
