@@ -106,7 +106,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 
 <table width="100%">
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/linefault">🦀 LineFault</a></h3>
       <p><sub><b>Rust Cache-Line & Memory Ordering Static Analyzer</b></sub></p>
       <p>
@@ -115,7 +115,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/linefault.md"><img src="https://img.shields.io/badge/Read%20Doc-FF6B00?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/wiredoctor">🩺 WireDoctor</a></h3>
       <p><sub><b>Spring Boot Context Diagnostics & CI Gating</b></sub></p>
       <p>
@@ -126,7 +126,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://doi.org/10.5281/zenodo.20426838">🧠 Project Lethe</a></h3>
       <p><sub><b>Bio-Inspired Edge AI Continual Learning Engine</b></sub></p>
       <p>
@@ -135,7 +135,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/project-lethe.md"><img src="https://img.shields.io/badge/Read%20Doc-00539C?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/cl-tds">⚡ CL-TDS</a></h3>
       <p><sub><b>1 MB Cache-Locked Temporal Decay Sketch</b></sub></p>
       <p>
@@ -151,7 +151,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 
 <table width="100%">
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/pulse_map_bindings">⚡ PulseMap</a></h3>
       <p><sub><b>Fixed-Capacity Hash Map with LFU+LRU</b></sub></p>
       <p>
@@ -159,7 +159,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/pulse-map.md"><img src="https://img.shields.io/badge/Read%20Doc-E10098?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/sketchboot">⚡ Sketchboot</a></h3>
       <p><sub><b>Spring Boot Rate Limiter via FFM & Rust</b></sub></p>
       <p>
@@ -169,7 +169,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/struct-mapper">⚡ Struct Mapper</a></h3>
       <p><sub><b>Zero-Boilerplate Rust Struct Derive</b></sub></p>
       <p>
@@ -177,7 +177,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/struct-mapper.md"><img src="https://img.shields.io/badge/Read%20Doc-007ACC?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/voxora">🎙️ Voxora Service</a></h3>
       <p><sub><b>Audio Capture & Keyring Daemon</b></sub></p>
       <p>
@@ -187,7 +187,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/GodseYe">👁️ GodseYe</a></h3>
       <p><sub><b>Tauri 2.0 DWM Stealth & VAD Engine</b></sub></p>
       <p>
@@ -196,7 +196,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/godseye.md"><img src="https://img.shields.io/badge/Read%20Doc-FFC107?style=flat-square&logo=readme&logoColor=black" /></a></p>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/MAGNETIC-MATH-UNIVERSE">🧲 Math Universe</a></h3>
       <p><sub><b>Esoteric Hardware Computation</b></sub></p>
       <p>
@@ -214,33 +214,75 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 
 <table width="100%">
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3>🦀 Low-Level & Systems</h3>
-      <p><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=rust,cpp,zig&theme=dark" /></a></p>
+      <table align="center">
+        <tr>
+          <td align="center"><img src="https://skillicons.dev/icons?i=rust&theme=dark" width="46"/><br><sub><b>Rust</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=cpp&theme=dark" width="46"/><br><sub><b>C++</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=zig&theme=dark" width="46"/><br><sub><b>Zig</b></sub></td>
+        </tr>
+      </table>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3>☕ High-Level & Backend</h3>
-      <p><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=java,js,ts&theme=dark" /></a></p>
+      <table align="center">
+        <tr>
+          <td align="center"><img src="https://skillicons.dev/icons?i=java&theme=dark" width="46"/><br><sub><b>Java</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="46"/><br><sub><b>JavaScript</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="46"/><br><sub><b>TypeScript</b></sub></td>
+        </tr>
+      </table>
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3>⚡ Frameworks & Tools</h3>
-      <p><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=spring,java,tauri&theme=dark" /></a></p>
+      <table align="center">
+        <tr>
+          <td align="center"><img src="https://skillicons.dev/icons?i=spring&theme=dark" width="44"/><br><sub><b>Spring Boot</b></sub></td>
+          <td align="center"><img src="https://img.shields.io/badge/Struts-B82012?style=for-the-badge&logo=apache&logoColor=white" height="28"/><br><sub><b>Struts</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=java&theme=dark" width="44"/><br><sub><b>Servlet</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=tauri&theme=dark" width="44"/><br><sub><b>Tauri</b></sub></td>
+        </tr>
+      </table>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3>💻 Operating Systems</h3>
-      <p><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=linux,ubuntu,kali,windows,apple&theme=dark" /></a></p>
+      <table align="center">
+        <tr>
+          <td align="center"><img src="https://skillicons.dev/icons?i=linux&theme=dark" width="42"/><br><sub><b>Linux</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=ubuntu&theme=dark" width="42"/><br><sub><b>Ubuntu</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=kali&theme=dark" width="42"/><br><sub><b>Kali</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=windows&theme=dark" width="42"/><br><sub><b>Windows</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=apple&theme=dark" width="42"/><br><sub><b>macOS</b></sub></td>
+        </tr>
+      </table>
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3>🎨 Frontend Dev</h3>
-      <p><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=html,css,js,ts,react&theme=dark" /></a></p>
+      <table align="center">
+        <tr>
+          <td align="center"><img src="https://skillicons.dev/icons?i=html&theme=dark" width="42"/><br><sub><b>HTML5</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=css&theme=dark" width="42"/><br><sub><b>CSS3</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="42"/><br><sub><b>JavaScript</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="42"/><br><sub><b>TypeScript</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="42"/><br><sub><b>React</b></sub></td>
+        </tr>
+      </table>
     </td>
-    <td width="50%" align="center" valign="top">
+    <td width="500" align="center" valign="top">
       <h3>🔧 DevOps & CI/CD</h3>
-      <p><a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=docker,git,githubactions,bash&theme=dark" /></a></p>
+      <table align="center">
+        <tr>
+          <td align="center"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="44"/><br><sub><b>Docker</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=git&theme=dark" width="44"/><br><sub><b>Git</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="44"/><br><sub><b>Actions</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=bash&theme=dark" width="44"/><br><sub><b>Bash</b></sub></td>
+        </tr>
+      </table>
     </td>
   </tr>
 </table>
