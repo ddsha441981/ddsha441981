@@ -151,7 +151,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 
 <table width="100%">
   <tr>
-    <td width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/pulse_map_bindings">⚡ PulseMap</a></h3>
       <p><sub><b>Fixed-Capacity Hash Map with LFU+LRU</b></sub></p>
       <p>
@@ -159,7 +159,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/pulse-map.md"><img src="https://img.shields.io/badge/Read%20Doc-E10098?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-    <td width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/sketchboot">⚡ Sketchboot</a></h3>
       <p><sub><b>Spring Boot Rate Limiter via FFM & Rust</b></sub></p>
       <p>
@@ -167,7 +167,9 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/sketchboot.md"><img src="https://img.shields.io/badge/Read%20Doc-6DB33F?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-    <td width="33%" align="center" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/struct-mapper">⚡ Struct Mapper</a></h3>
       <p><sub><b>Zero-Boilerplate Rust Struct Derive</b></sub></p>
       <p>
@@ -175,9 +177,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/struct-mapper.md"><img src="https://img.shields.io/badge/Read%20Doc-007ACC?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-  </tr>
-  <tr>
-    <td width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/voxora">🎙️ Voxora Service</a></h3>
       <p><sub><b>Audio Capture & Keyring Daemon</b></sub></p>
       <p>
@@ -185,7 +185,9 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/voxora.md"><img src="https://img.shields.io/badge/Read%20Doc-FF6B00?style=flat-square&logo=readme&logoColor=white" /></a></p>
     </td>
-    <td width="33%" align="center" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/GodseYe">👁️ GodseYe</a></h3>
       <p><sub><b>Tauri 2.0 DWM Stealth & VAD Engine</b></sub></p>
       <p>
@@ -194,7 +196,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
       </p>
       <p><a href="docs/projects/godseye.md"><img src="https://img.shields.io/badge/Read%20Doc-FFC107?style=flat-square&logo=readme&logoColor=black" /></a></p>
     </td>
-    <td width="33%" align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3><a href="https://github.com/ddsha441981/MAGNETIC-MATH-UNIVERSE">🧲 Math Universe</a></h3>
       <p><sub><b>Esoteric Hardware Computation</b></sub></p>
       <p>
