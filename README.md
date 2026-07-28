@@ -289,6 +289,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 
 <a id="benchmarks"></a>
 ### ⚡ Systems Optimization Benchmarks
+
 | Optimization | What I Do With It | Target Metric |
 |--------------|--------------------|---------------|
 | **Static Cache Analysis** | Detect cache-line false sharing & memory ordering bugs (LineFault) | `0 Compiler ICEs` |
@@ -299,8 +300,10 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 | **FFM / FFI** | Native Rust bindings for Java 22 / Node.js | `<1.2ns Overhead` |
 | **Bio-Inspired Memory** | Selective memory decay algorithm (Project Lethe) | `4M Vectors/sec CPU` |
 
+<br/>
+
 <p align="center">
-  <img src="./assets/systems-terminal.svg" alt="Systems Verification Terminal Output" width="100%" />
+  <img src="./assets/systems-terminal.svg" alt="Live Systems Verification Terminal Output" width="100%" />
 </p>
 
 ---
