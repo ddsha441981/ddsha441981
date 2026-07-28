@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="100%">
   <defs>
     <style>
       .bg { fill: #1e1e1e; }
@@ -16,13 +16,41 @@
       .log-info { fill: #6a9955; }
       .log-sum { fill: #dcdcaa; font-weight: bold; }
       .log-val { fill: #b5cea8; }
-      .cursor { fill: #4ec9b0; animation: blink 1s step-start infinite; }
+      .cursor { fill: #4ec9b0; animation: blink 0.8s step-start infinite; }
+
       @keyframes blink { 50% { opacity: 0; } }
+
+      /* Live Terminal Typing Animations */
+      .anim-l1 { animation: animLine1 12s infinite; }
+      .anim-l2 { animation: animLine2 12s infinite; }
+      .anim-l3 { animation: animLine3 12s infinite; }
+      .anim-l4 { animation: animLine4 12s infinite; }
+      .anim-l5 { animation: animLine5 12s infinite; }
+      .anim-l6 { animation: animLine6 12s infinite; }
+      .anim-l7 { animation: animLine7 12s infinite; }
+      .anim-l8 { animation: animLine8 12s infinite; }
+      .anim-l9 { animation: animLine9 12s infinite; }
+      .anim-l10 { animation: animLine10 12s infinite; }
+      .anim-l11 { animation: animLine11 12s infinite; }
+      .anim-l12 { animation: animLine12 12s infinite; }
+
+      @keyframes animLine1 { 0% { opacity: 0; } 5% { opacity: 1; } 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine2 { 0%, 12% { opacity: 0; } 15%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine3 { 0%, 18% { opacity: 0; } 21%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine4 { 0%, 24% { opacity: 0; } 27%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine5 { 0%, 30% { opacity: 0; } 33%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine6 { 0%, 36% { opacity: 0; } 39%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine7 { 0%, 43% { opacity: 0; } 46%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine8 { 0%, 49% { opacity: 0; } 52%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine9 { 0%, 55% { opacity: 0; } 58%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine10 { 0%, 61% { opacity: 0; } 64%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine11 { 0%, 67% { opacity: 0; } 70%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
+      @keyframes animLine12 { 0%, 73% { opacity: 0; } 76%, 93% { opacity: 1; } 98%, 100% { opacity: 0; } }
     </style>
   </defs>
 
   <!-- Main Box Background -->
-  <rect x="0" y="0" width="900" height="330" rx="8" ry="8" class="bg" />
+  <rect x="0" y="0" width="900" height="340" rx="8" ry="8" class="bg" />
   
   <!-- Header Bar -->
   <rect x="0" y="0" width="900" height="36" rx="8" ry="8" class="header" />
@@ -33,35 +61,39 @@
   <circle cx="60" cy="18" r="6" class="dot-green" />
   
   <!-- Window Title -->
-  <text x="450" y="23" text-anchor="middle" class="title-text">Terminal — ddsha441981@ddsha441981-Latitude-7490: ~</text>
+  <text x="450" y="23" text-anchor="middle" class="title-text">Live Terminal — ddsha441981@ddsha441981-Latitude-7490: ~</text>
 
   <!-- Border Frame -->
-  <rect x="0" y="0" width="900" height="330" rx="8" ry="8" class="border" />
+  <rect x="0" y="0" width="900" height="340" rx="8" ry="8" class="border" />
 
   <!-- Terminal Content Lines -->
   <g class="term-text" transform="translate(20, 65)">
-    <!-- Command Prompt -->
-    <text y="0">
-      <tspan class="prompt-usr">ddsha441981@ddsha441981-Latitude-7490</tspan>:<tspan class="prompt-path">~</tspan>$ <tspan class="prompt-cmd">systems-suite-verify</tspan> <tspan class="flag">--all-projects --release</tspan>
-    </text>
+    <!-- Line 1: Command Prompt -->
+    <g class="anim-l1">
+      <text y="0">
+        <tspan class="prompt-usr">ddsha441981@ddsha441981-Latitude-7490</tspan>:<tspan class="prompt-path">~</tspan>$ <tspan class="prompt-cmd">systems-suite-verify</tspan> <tspan class="flag">--all-projects --release</tspan>
+      </text>
+    </g>
 
-    <!-- Execution Output Logs -->
-    <text y="26" class="log-info">[INFO] [Project Lethe] Bio-Inspired Edge AI: 4.07M vectors/sec (O(1) Welford EMA) ... OK</text>
-    <text y="50" class="log-info">[INFO] [LineFault] MIR Static Analysis &amp; False-Sharing Hazard Checker ... OK</text>
-    <text y="74" class="log-info">[INFO] [WireDoctor] Spring Boot Diagnostics &amp; Tarjan SCC CI Gate Engine ... OK</text>
-    <text y="98" class="log-info">[INFO] [CL-TDS] 1MB L3 Cache-Locked Sketch (100M+ ops/sec, 0 Lock Contention) ... OK</text>
-    <text y="122" class="log-info">[INFO] [GodseYe] 5-Layer DWM Display Affinity &amp; Zero-Copy Audio VAD Loop ... OK</text>
+    <!-- Line 2-6: Execution Output Logs -->
+    <g class="anim-l2"><text y="26" class="log-info">[INFO] [Project Lethe] Bio-Inspired Edge AI: 4.07M vectors/sec (O(1) Welford EMA) ... OK</text></g>
+    <g class="anim-l3"><text y="50" class="log-info">[INFO] [LineFault] MIR Static Analysis &amp; False-Sharing Hazard Checker ... OK</text></g>
+    <g class="anim-l4"><text y="74" class="log-info">[INFO] [WireDoctor] Spring Boot Diagnostics &amp; Tarjan SCC CI Gate Engine ... OK</text></g>
+    <g class="anim-l5"><text y="98" class="log-info">[INFO] [CL-TDS] 1MB L3 Cache-Locked Sketch (100M+ ops/sec, 0 Lock Contention) ... OK</text></g>
+    <g class="anim-l6"><text y="122" class="log-info">[INFO] [GodseYe] 5-Layer DWM Display Affinity &amp; Zero-Copy Audio VAD Loop ... OK</text></g>
 
-    <!-- Summary Section -->
-    <text y="152" class="log-sum">[SUMMARY] Executing 10-Project Portfolio Validation Suite:</text>
-    <text y="176" fill="#cccccc">  ├── Memory Footprint : <tspan class="log-val">Strictly Bounded O(1) Memory Models</tspan></text>
-    <text y="200" fill="#cccccc">  ├── Mutex Contention : <tspan class="log-val">0 (Lock-Free Atomics &amp; Zero-Copy Pipelines)</tspan></text>
-    <text y="224" fill="#cccccc">  ├── Interop Overhead : <tspan class="log-val">1.2ns (Java 22 FFM / Win32 FFI Bindings)</tspan></text>
-    <text y="248" fill="#cccccc">  └── System Status   : &#9889; <tspan class="prompt-usr">ALL 10 PROJECTS VERIFIED &amp; OPERATIONAL</tspan></text>
+    <!-- Line 7: Summary Section -->
+    <g class="anim-l7"><text y="152" class="log-sum">[SUMMARY] Executing 10-Project Portfolio Validation Suite:</text></g>
+    <g class="anim-l8"><text y="176" fill="#cccccc">  ├── Memory Footprint : <tspan class="log-val">Strictly Bounded O(1) Memory Models</tspan></text></g>
+    <g class="anim-l9"><text y="200" fill="#cccccc">  ├── Mutex Contention : <tspan class="log-val">0 (Lock-Free Atomics &amp; Zero-Copy Pipelines)</tspan></text></g>
+    <g class="anim-l10"><text y="224" fill="#cccccc">  ├── Interop Overhead : <tspan class="log-val">1.2ns (Java 22 FFM / Win32 FFI Bindings)</tspan></text></g>
+    <g class="anim-l11"><text y="248" fill="#cccccc">  └── System Status   : &#9889; <tspan class="prompt-usr">ALL 10 PROJECTS VERIFIED &amp; OPERATIONAL</tspan></text></g>
 
-    <!-- End Prompt with Blinking Cursor -->
-    <text y="278">
-      <tspan class="prompt-usr">ddsha441981@ddsha441981-Latitude-7490</tspan>:<tspan class="prompt-path">~</tspan>$ <tspan class="cursor">_</tspan>
-    </text>
+    <!-- Line 12: End Prompt with Blinking Cursor -->
+    <g class="anim-l12">
+      <text y="278">
+        <tspan class="prompt-usr">ddsha441981@ddsha441981-Latitude-7490</tspan>:<tspan class="prompt-path">~</tspan>$ <tspan class="cursor">_</tspan>
+      </text>
+    </g>
   </g>
 </svg>
