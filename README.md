@@ -210,9 +210,9 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 <a id="tech-stack"></a>
 ## 🛠️ Skills & Technical Stack
 
-<table align="center">
+<table width="100%">
   <tr>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>🦀 Low-Level & Systems</h3>
       <table align="center">
         <tr>
@@ -222,7 +222,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
         </tr>
       </table>
     </td>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>☕ High-Level & Backend</h3>
       <table align="center">
         <tr>
@@ -232,21 +232,9 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
         </tr>
       </table>
     </td>
-    <td align="center" valign="top">
-      <h3>🎨 Frontend Dev</h3>
-      <table align="center">
-        <tr>
-          <td align="center"><img src="https://skillicons.dev/icons?i=html&theme=dark" width="42"/><br><sub><b>HTML5</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=css&theme=dark" width="42"/><br><sub><b>CSS3</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="42"/><br><sub><b>JavaScript</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="42"/><br><sub><b>TypeScript</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="42"/><br><sub><b>React</b></sub></td>
-        </tr>
-      </table>
-    </td>
   </tr>
   <tr>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>⚡ Frameworks & Tools</h3>
       <table align="center">
         <tr>
@@ -257,7 +245,7 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
         </tr>
       </table>
     </td>
-    <td align="center" valign="top">
+    <td width="50%" align="center" valign="top">
       <h3>💻 Operating Systems</h3>
       <table align="center">
         <tr>
@@ -269,7 +257,21 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
         </tr>
       </table>
     </td>
-    <td align="center" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <h3>🎨 Frontend Dev</h3>
+      <table align="center">
+        <tr>
+          <td align="center"><img src="https://skillicons.dev/icons?i=html&theme=dark" width="42"/><br><sub><b>HTML5</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=css&theme=dark" width="42"/><br><sub><b>CSS3</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="42"/><br><sub><b>JavaScript</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="42"/><br><sub><b>TypeScript</b></sub></td>
+          <td align="center"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="42"/><br><sub><b>React</b></sub></td>
+        </tr>
+      </table>
+    </td>
+    <td width="50%" align="center" valign="top">
       <h3>🔧 DevOps & CI/CD</h3>
       <table align="center">
         <tr>
