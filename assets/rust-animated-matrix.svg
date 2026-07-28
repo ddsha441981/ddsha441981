@@ -1,0 +1,171 @@
+<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark Tech Gradient Background -->
+    <linearGradient id="bgAnimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B10"/>
+      <stop offset="50%" stop-color="#0F141C"/>
+      <stop offset="100%" stop-color="#080B10"/>
+    </linearGradient>
+
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF6B00" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="neonOrange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="neonCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="matrixPattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E2633" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.2" fill="#303846"/>
+    </pattern>
+
+    <!-- CSS Keyframe Animations -->
+    <style>
+      @keyframes rotateCW {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      @keyframes rotateCCW {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(-360deg); }
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; filter: drop-shadow(0 0 2px #FF6B00); }
+        50% { opacity: 0.95; filter: drop-shadow(0 0 10px #FF6B00); }
+      }
+
+      @keyframes scanSweep {
+        0% { transform: translateY(-10px); opacity: 0; }
+        30% { opacity: 0.7; }
+        70% { opacity: 0.7; }
+        100% { transform: translateY(220px); opacity: 0; }
+      }
+
+      @keyframes blinkStatus {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+
+      @keyframes dashFlow {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      .gear-cw {
+        transform-origin: 810px 110px;
+        animation: rotateCW 14s linear infinite;
+      }
+
+      .gear-ccw {
+        transform-origin: 735px 155px;
+        animation: rotateCCW 10s linear infinite;
+      }
+
+      .glowing-circuit {
+        animation: pulseGlow 3s ease-in-out infinite;
+      }
+
+      .scan-line {
+        animation: scanSweep 4s ease-in-out infinite;
+      }
+
+      .led-green {
+        animation: blinkStatus 1.8s ease-in-out infinite;
+      }
+
+      .led-orange {
+        animation: blinkStatus 2.4s ease-in-out infinite 0.6s;
+      }
+
+      .data-flow-line {
+        stroke-dasharray: 8, 8;
+        animation: dashFlow 2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Base Outer Container -->
+  <rect width="900" height="220" rx="12" fill="url(#bgAnimGrad)" stroke="#1E2633" stroke-width="1.5"/>
+  <rect width="900" height="220" rx="12" fill="url(#matrixPattern)" opacity="0.75"/>
+
+  <!-- Scanning Laser Ray -->
+  <line x1="0" y1="0" x2="900" y2="0" stroke="url(#laserGrad)" stroke-width="3" class="scan-line"/>
+
+  <!-- Left Side: Interactive Circuit & Data Bus -->
+  <g transform="translate(45, 45)">
+    <!-- Circuit Lines -->
+    <path d="M 0 30 L 70 30 L 100 60 L 140 60" fill="none" stroke="#FF6B00" stroke-width="2" class="data-flow-line"/>
+    <path d="M 0 90 L 50 90 L 80 60 L 140 60" fill="none" stroke="#00F0FF" stroke-width="2" class="data-flow-line"/>
+    
+    <!-- Nodes -->
+    <circle cx="0" cy="30" r="4" fill="#FF6B00" class="led-orange"/>
+    <circle cx="0" cy="90" r="4" fill="#00F0FF" class="led-green"/>
+    <circle cx="140" cy="60" r="6" fill="#3FB950" filter="url(#neonCyan)" class="glowing-circuit"/>
+  </g>
+
+  <!-- Middle: Technical Title & Animated Metrics -->
+  <text x="210" y="68" font-family="'JetBrains Mono', monospace" font-weight="800" font-size="22" fill="#FFFFFF" letter-spacing="1">
+    HARDWARE-AWARE SUITE
+  </text>
+
+  <text x="210" y="95" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="13" fill="#00F0FF" letter-spacing="1.5">
+    ZERO-COPY RING BUFFERS • TARJAN SCC • MEMORY ORDERINGS
+  </text>
+
+  <!-- Live Animated Status Indicators -->
+  <g transform="translate(210, 120)">
+    <!-- Indicator 1 -->
+    <circle cx="10" cy="12" r="5" fill="#3FB950" class="led-green"/>
+    <text x="24" y="16" font-family="'JetBrains Mono', monospace" font-size="12" fill="#E6EDE3" font-weight="600">L3 Cache-Locked</text>
+
+    <!-- Indicator 2 -->
+    <circle cx="170" cy="12" r="5" fill="#FF6B00" class="led-orange"/>
+    <text x="184" y="16" font-family="'JetBrains Mono', monospace" font-size="12" fill="#E6EDE3" font-weight="600">MIR Static Gate</text>
+
+    <!-- Indicator 3 -->
+    <circle cx="330" cy="12" r="5" fill="#00F0FF" class="led-green"/>
+    <text x="344" y="16" font-family="'JetBrains Mono', monospace" font-size="12" fill="#E6EDE3" font-weight="600">Java 22 FFM Interop</text>
+  </g>
+
+  <!-- Bottom Code Snippet Box -->
+  <g transform="translate(210, 155)">
+    <rect width="430" height="38" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    <text x="15" y="24" font-family="'JetBrains Mono', monospace" font-size="12" fill="#8B949E">
+      <tspan fill="#FF6B00">fn</tspan> <tspan fill="#569CD6">verify_hardware</tspan>() -&gt; <tspan fill="#4EC9B0">Result</tspan>&lt;<tspan fill="#CE9178">ZeroCopy</tspan>, <tspan fill="#F44747">ICE</tspan>&gt; { <tspan fill="#6A9955">// O(1) Memory</tspan> }
+    </text>
+  </g>
+
+  <!-- Right Side: Animated Rotating Rust Dual Gears -->
+  <!-- Main Clockwise Rust Gear -->
+  <g class="gear-cw">
+    <circle cx="810" cy="110" r="40" fill="none" stroke="#FF6B00" stroke-width="3" stroke-dasharray="12, 6" filter="url(#neonOrange)"/>
+    <circle cx="810" cy="110" r="28" fill="#161B22" stroke="#FF8E3C" stroke-width="2"/>
+    <circle cx="810" cy="110" r="10" fill="#FF6B00"/>
+  </g>
+
+  <!-- Smaller Counter-Clockwise Interlocking Gear -->
+  <g class="gear-ccw">
+    <circle cx="735" cy="155" r="26" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-dasharray="8, 5" filter="url(#neonCyan)"/>
+    <circle cx="735" cy="155" r="18" fill="#0D1117" stroke="#00F0FF" stroke-width="1.5"/>
+    <circle cx="735" cy="155" r="6" fill="#00F0FF"/>
+  </g>
+
+  <!-- Top Right Live Status Pill -->
+  <g transform="translate(745, 25)">
+    <rect width="115" height="22" rx="11" fill="#3FB950" fill-opacity="0.15" stroke="#3FB950" stroke-width="0.8"/>
+    <circle cx="758" cy="36" r="3.5" fill="#3FB950" class="led-green"/>
+    <text x="768" y="39" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#3FB950">LIVE METRICS</text>
+  </g>
+</svg>

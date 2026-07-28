@@ -1,0 +1,194 @@
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0F1622"/>
+      <stop offset="100%" stop-color="#06090F"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glowOrange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glowGreen" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Pipeline Arrow Flow Gradients -->
+    <linearGradient id="flowCodeToComp" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <linearGradient id="flowCompToHw" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="pipeGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#17202E" stroke-width="0.7"/>
+    </pattern>
+
+    <!-- CSS Keyframe Animations -->
+    <style>
+      @keyframes laserTravel {
+        0% { stroke-dashoffset: 120; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      @keyframes nodePulse {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.08); }
+      }
+
+      @keyframes gearTurn {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      @keyframes aluClock {
+        0%, 100% { fill: #1E293B; stroke: #334155; }
+        50% { fill: #00F0FF; stroke: #38BDF8; filter: drop-shadow(0 0 8px #00F0FF); }
+      }
+
+      @keyframes textType {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+
+      .laser-line-1 {
+        stroke-dasharray: 15, 15;
+        animation: laserTravel 1.5s linear infinite;
+      }
+
+      .laser-line-2 {
+        stroke-dasharray: 15, 15;
+        animation: laserTravel 1.2s linear infinite;
+      }
+
+      .compiler-gear {
+        transform-origin: 450px 130px;
+        animation: gearTurn 8s linear infinite;
+      }
+
+      .alu-cell-1 { animation: aluClock 1.6s ease-in-out infinite; }
+      .alu-cell-2 { animation: aluClock 1.6s ease-in-out infinite 0.4s; }
+      .alu-cell-3 { animation: aluClock 1.6s ease-in-out infinite 0.8s; }
+      .alu-cell-4 { animation: aluClock 1.6s ease-in-out infinite 1.2s; }
+
+      .blinking-cursor { animation: textType 1s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="900" height="260" rx="14" fill="url(#pipeBg)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect width="900" height="260" rx="14" fill="url(#pipeGrid)" opacity="0.7"/>
+
+  <!-- Pipeline Top Title Header -->
+  <text x="450" y="36" font-family="'JetBrains Mono', monospace" font-weight="800" font-size="15" fill="#F8FAFC" letter-spacing="3" text-anchor="middle">
+    THE RUST HARDWARE PIPELINE
+  </text>
+  <text x="450" y="55" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="11" fill="#64748B" letter-spacing="1.5" text-anchor="middle">
+    SOURCE CODE ➔ COMPILER LOWERING ➔ SILICON HARDWARE
+  </text>
+
+  <!-- ==================== STAGE 1: RUST SOURCE CODE ==================== -->
+  <g transform="translate(40, 75)">
+    <!-- Code Editor Card -->
+    <rect width="240" height="150" rx="10" fill="#0F172A" stroke="#FF6B00" stroke-width="1.2" opacity="0.95"/>
+    
+    <!-- Top Bar Dots -->
+    <circle cx="16" cy="16" r="4" fill="#EF4444"/>
+    <circle cx="28" cy="16" r="4" fill="#F59E0B"/>
+    <circle cx="40" cy="16" r="4" fill="#10B981"/>
+    <text x="60" y="19" font-family="'JetBrains Mono', monospace" font-size="10" fill="#64748B">main.rs (Rust 2024)</text>
+    <line x1="0" y1="30" x2="240" y2="30" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Code Lines -->
+    <g transform="translate(14, 48)" font-family="'JetBrains Mono', monospace" font-size="11">
+      <text y="0"><tspan fill="#FF6B00">fn</tspan> <tspan fill="#60A5FA">hardware_loop</tspan>() {</text>
+      <text y="18" x="10"><tspan fill="#F472B6">let</tspan> core = <tspan fill="#A7F3D0">AtomicU64</tspan>::new(0);</text>
+      <text y="36" x="10"><tspan fill="#F472B6">match</tspan> core.<tspan fill="#60A5FA">fetch_add</tspan>(<tspan fill="#F59E0B">1</tspan>, </text>
+      <text y="54" x="25"><tspan fill="#C084FC">Ordering</tspan>::<tspan fill="#38BDF8">SeqCst</tspan>) {</text>
+      <text y="72" x="20"><tspan fill="#4ADE80">Ok</tspan>(val) =&gt; <tspan fill="#60A5FA">simd_vectorize</tspan>(),</text>
+      <text y="90" x="10">}</text>
+      <text y="90" x="22" fill="#FF6B00" class="blinking-cursor">|</text>
+    </g>
+  </g>
+
+  <!-- Flow Laser Line 1: Code to Compiler -->
+  <path d="M 280 150 L 360 150" fill="none" stroke="url(#flowCodeToComp)" stroke-width="3" class="laser-line-1" filter="url(#glowOrange)"/>
+  <polygon points="365,150 355,144 355,156" fill="#A855F7"/>
+
+  <!-- ==================== STAGE 2: COMPILER LOWERING (HIR/MIR/LLVM) ==================== -->
+  <g transform="translate(365, 75)">
+    <!-- Compiler Card -->
+    <rect width="170" height="150" rx="10" fill="#0F172A" stroke="#A855F7" stroke-width="1.2" opacity="0.95"/>
+    
+    <text x="85" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#C084FC" text-anchor="middle">rustc &amp; LLVM</text>
+    <line x1="0" y1="34" x2="170" y2="34" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- Rotating Gear Icon -->
+    <g class="compiler-gear">
+      <circle cx="450" cy="130" r="18" fill="none" stroke="#A855F7" stroke-width="2.5" stroke-dasharray="6, 4"/>
+      <circle cx="450" cy="130" r="8" fill="#1E1B4B" stroke="#C084FC" stroke-width="1.5"/>
+    </g>
+
+    <!-- Compiler Passes Pills -->
+    <g transform="translate(15, 46)">
+      <rect width="140" height="22" rx="4" fill="#1E1B4B" stroke="#6366F1" stroke-width="0.8"/>
+      <text x="70" y="15" font-family="'JetBrains Mono', monospace" font-size="10" fill="#A5B4FC" text-anchor="middle">1. AST &amp; HIR Linting</text>
+
+      <rect y="28" width="140" height="22" rx="4" fill="#1E1B4B" stroke="#8B5CF6" stroke-width="0.8"/>
+      <text x="70" y="43" font-family="'JetBrains Mono', monospace" font-size="10" fill="#C4B5FD" text-anchor="middle">2. MIR Borrow Check</text>
+
+      <rect y="56" width="140" height="22" rx="4" fill="#1E1B4B" stroke="#D946EF" stroke-width="0.8"/>
+      <text x="70" y="71" font-family="'JetBrains Mono', monospace" font-size="10" fill="#F0ABFC" text-anchor="middle">3. LLVM IR Machine Code</text>
+    </g>
+  </g>
+
+  <!-- Flow Laser Line 2: Compiler to Hardware -->
+  <path d="M 535 150 L 615 150" fill="none" stroke="url(#flowCompToHw)" stroke-width="3" class="laser-line-2" filter="url(#glowCyan)"/>
+  <polygon points="620,150 610,144 610,156" fill="#00F0FF"/>
+
+  <!-- ==================== STAGE 3: SILICON HARDWARE (CPU/ALU/CACHE) ==================== -->
+  <g transform="translate(620, 75)">
+    <!-- CPU Silicon Die Box -->
+    <rect width="240" height="150" rx="10" fill="#0F172A" stroke="#00F0FF" stroke-width="1.2" opacity="0.95"/>
+    
+    <text x="120" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="middle">CPU CORE REGISTERS</text>
+    <line x1="0" y1="34" x2="240" y2="34" stroke="#1E293B" stroke-width="1"/>
+
+    <!-- ALU Clock Matrix Grid -->
+    <g transform="translate(18, 48)">
+      <!-- Register Cells -->
+      <rect width="46" height="38" rx="4" class="alu-cell-1"/>
+      <text x="23" y="23" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8" text-anchor="middle">AVX0</text>
+
+      <rect x="52" width="46" height="38" rx="4" class="alu-cell-2"/>
+      <text x="75" y="23" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8" text-anchor="middle">AVX1</text>
+
+      <rect x="104" width="46" height="38" rx="4" class="alu-cell-3"/>
+      <text x="127" y="23" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8" text-anchor="middle">L1_CACHE</text>
+
+      <rect x="156" width="46" height="38" rx="4" class="alu-cell-4"/>
+      <text x="179" y="23" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8" text-anchor="middle">L3_LOCK</text>
+    </g>
+
+    <!-- Bottom Status Text -->
+    <g transform="translate(18, 98)">
+      <rect width="204" height="24" rx="4" fill="#0284C7" fill-opacity="0.15" stroke="#0369A1" stroke-width="0.8"/>
+      <text x="102" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#38BDF8" text-anchor="middle">⚡ 0 LOCK CONTENTION • 100M+ OPS</text>
+    </g>
+  </g>
+</svg>

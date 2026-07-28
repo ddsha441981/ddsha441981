@@ -1,0 +1,17 @@
+name: Latest Blog Posts Workflow
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-readme-with-blog:
+    name: Update README with blog posts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://dev.to/feed/ddsha441981,https://medium.com/feed/@ddsha441981"
+          max_post_count: 4
