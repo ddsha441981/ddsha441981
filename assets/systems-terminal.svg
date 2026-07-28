@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="100%">
   <defs>
     <style>
-      .bg { fill: #1e1e1e; rx: 8px; ry: 8px; }
-      .header { fill: #252526; rx: 8px; ry: 8px; }
-      .border { fill: none; stroke: #333333; stroke-width: 1.5; rx: 8px; ry: 8px; }
+      .bg { fill: #1e1e1e; }
+      .header { fill: #252526; }
+      .border { fill: none; stroke: #333333; stroke-width: 1.5; }
       .dot-red { fill: #ff5f56; }
       .dot-yellow { fill: #ffbd2e; }
       .dot-green { fill: #27c93f; }
@@ -22,10 +22,10 @@
   </defs>
 
   <!-- Main Box Background -->
-  <rect x="0" y="0" width="900" height="330" class="bg" />
+  <rect x="0" y="0" width="900" height="330" rx="8" ry="8" class="bg" />
   
   <!-- Header Bar -->
-  <rect x="0" y="0" width="900" height="36" class="header" />
+  <rect x="0" y="0" width="900" height="36" rx="8" ry="8" class="header" />
   
   <!-- Traffic Light Window Buttons -->
   <circle cx="20" cy="18" r="6" class="dot-red" />
@@ -36,7 +36,7 @@
   <text x="450" y="23" text-anchor="middle" class="title-text">Terminal — ddsha441981@ddsha441981-Latitude-7490: ~</text>
 
   <!-- Border Frame -->
-  <rect x="0" y="0" width="900" height="330" class="border" />
+  <rect x="0" y="0" width="900" height="330" rx="8" ry="8" class="border" />
 
   <!-- Terminal Content Lines -->
   <g class="term-text" transform="translate(20, 65)">
@@ -54,10 +54,10 @@
 
     <!-- Summary Section -->
     <text y="152" class="log-sum">[SUMMARY] Executing 10-Project Portfolio Validation Suite:</text>
-    <text y="176" fill="#cccccc">&nbsp;&nbsp;├── Memory Footprint : <tspan class="log-val">Strictly Bounded O(1) Memory Models</tspan></text>
-    <text y="200" fill="#cccccc">&nbsp;&nbsp;├── Mutex Contention : <tspan class="log-val">0 (Lock-Free Atomics &amp; Zero-Copy Pipelines)</tspan></text>
-    <text y="224" fill="#cccccc">&nbsp;&nbsp;├── Interop Overhead : <tspan class="log-val">1.2ns (Java 22 FFM / Win32 FFI Bindings)</tspan></text>
-    <text y="248" fill="#cccccc">&nbsp;&nbsp;└── System Status &nbsp;&nbsp;&nbsp;: ⚡ <tspan class="prompt-usr">ALL 10 PROJECTS VERIFIED &amp; OPERATIONAL</tspan></text>
+    <text y="176" fill="#cccccc">  ├── Memory Footprint : <tspan class="log-val">Strictly Bounded O(1) Memory Models</tspan></text>
+    <text y="200" fill="#cccccc">  ├── Mutex Contention : <tspan class="log-val">0 (Lock-Free Atomics &amp; Zero-Copy Pipelines)</tspan></text>
+    <text y="224" fill="#cccccc">  ├── Interop Overhead : <tspan class="log-val">1.2ns (Java 22 FFM / Win32 FFI Bindings)</tspan></text>
+    <text y="248" fill="#cccccc">  └── System Status   : &#9889; <tspan class="prompt-usr">ALL 10 PROJECTS VERIFIED &amp; OPERATIONAL</tspan></text>
 
     <!-- End Prompt with Blinking Cursor -->
     <text y="278">
