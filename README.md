@@ -299,29 +299,9 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 | **FFM / FFI** | Native Rust bindings for Java 22 / Node.js | `<1.2ns Overhead` |
 | **Bio-Inspired Memory** | Selective memory decay algorithm (Project Lethe) | `4M Vectors/sec CPU` |
 
-<table width="100%">
-  <tr>
-    <td style="background-color:#1e1e1e; border:1px solid #333333; border-radius:6px; padding:0px;">
-      <div style="background-color:#252526; padding:8px 12px; border-top-left-radius:6px; border-top-right-radius:6px; font-family:monospace; font-size:12px; color:#cccccc;">
-        <b>Terminal — ddsha441981@ddsha441981-Latitude-7490</b>
-      </div>
-      <div style="padding:14px; font-family:'Ubuntu Mono',Consolas,monospace; font-size:14px; line-height:1.6; color:#cccccc;">
-        <span style="color:#4ec9b0; font-weight:bold;">ddsha441981@ddsha441981-Latitude-7490</span>:<span style="color:#569cd6; font-weight:bold;">~</span>$ <span style="color:#ce9178;">systems-suite-verify</span> <span style="color:#9cdcfe;">--all-projects</span> <span style="color:#9cdcfe;">--release</span><br>
-        <span style="color:#6a9955;">[INFO] [Project Lethe] Bio-Inspired Edge AI: 4.07M vectors/sec (O(1) Welford EMA) ... OK</span><br>
-        <span style="color:#6a9955;">[INFO] [LineFault] MIR Static Analysis & False-Sharing Hazard Checker ... OK</span><br>
-        <span style="color:#6a9955;">[INFO] [WireDoctor] Spring Boot Diagnostics & Tarjan SCC CI Gate Engine ... OK</span><br>
-        <span style="color:#6a9955;">[INFO] [CL-TDS] 1MB L3 Cache-Locked Sketch (100M+ ops/sec, 0 Lock Contention) ... OK</span><br>
-        <span style="color:#6a9955;">[INFO] [GodseYe] 5-Layer DWM Display Affinity & Zero-Copy Audio VAD Loop ... OK</span><br>
-        <span style="color:#dcdcaa;">[SUMMARY] Executing 10-Project Portfolio Validation Suite:</span><br>
-        &nbsp;&nbsp;├── Memory Footprint : <span style="color:#b5cea8;">Strictly Bounded O(1) Memory Models</span><br>
-        &nbsp;&nbsp;├── Mutex Contention : <span style="color:#b5cea8;">0 (Lock-Free Atomics & Zero-Copy Pipelines)</span><br>
-        &nbsp;&nbsp;├── Interop Overhead : <span style="color:#b5cea8;">1.2ns (Java 22 FFM / Win32 FFI Bindings)</span><br>
-        &nbsp;&nbsp;└── System Status &nbsp;&nbsp;&nbsp;: ⚡ <span style="color:#4ec9b0; font-weight:bold;">ALL 10 PROJECTS VERIFIED & OPERATIONAL</span><br>
-        <span style="color:#4ec9b0; font-weight:bold;">ddsha441981@ddsha441981-Latitude-7490</span>:<span style="color:#569cd6; font-weight:bold;">~</span>$ <span style="color:#cccccc;">_</span>
-      </div>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./assets/systems-terminal.svg" alt="Systems Verification Terminal Output" width="100%" />
+</p>
 
 ---
 
