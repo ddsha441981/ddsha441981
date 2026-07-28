@@ -86,17 +86,9 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 ## 📊 GitHub Metrics
 
 <p align="center">
-  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Isometric Contribution Graph" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/followers/ddsha441981?label=Followers&style=for-the-badge&logo=github&color=FF6B00" alt="GitHub Followers">
-  <a href="https://github.com/ddsha441981?tab=repositories">
-    <img src="https://img.shields.io/badge/GitHub-Public%20Repositories-FF6B00?style=for-the-badge&logo=github&logoColor=white" alt="Repositories">
-  </a>
-  <a href="https://crates.io/users/ddsha441981">
-    <img src="https://img.shields.io/badge/Crates.io-Published%20Packages-FF6B00?style=for-the-badge&logo=rust&logoColor=white" alt="Published Packages">
-  </a>
+  <img src="https://img.shields.io/github/followers/ddsha441981?label=Followers&amp;style=for-the-badge&amp;logo=github&amp;color=FF6B00" alt="GitHub Followers" />
+  <a href="https://github.com/ddsha441981?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Public%20Repositories-FF6B00?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Repositories" /></a>
+  <a href="https://crates.io/users/ddsha441981"><img src="https://img.shields.io/badge/Crates.io-Published%20Packages-FF6B00?style=for-the-badge&amp;logo=rust&amp;logoColor=white" alt="Published Packages" /></a>
 </p>
 
 ---
@@ -337,28 +329,13 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 <a id="connect"></a>
 ## 📫 Connect With Me
 <p align="center">
-  <a href="mailto:deendayal_kumawat@outlook.com">
-    <img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email">
-  </a>
-  <a href="https://linkedin.com/in/deendayal-kumawat">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://github.com/ddsha441981">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-  <a href="https://x.com/ddsha44198">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
-  </a>
-  <a href="https://dev.to/ddsha441981">
-    <img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white" alt="dev.to">
-  </a>
-  <a href="https://medium.com/@ddsha441981">
-    <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium">
-  </a>
-  <a href="https://crates.io/users/ddsha441981">
-    <img src="https://img.shields.io/badge/Crates.io-FF6B00?style=for-the-badge&logo=rust&logoColor=white" alt="Crates.io">
-  </a>
-  
+  <a href="mailto:deendayal_kumawat@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&amp;logo=microsoftoutlook&amp;logoColor=white" alt="Email" /></a>
+  <a href="https://linkedin.com/in/deendayal-kumawat"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/ddsha441981"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a>
+  <a href="https://x.com/ddsha44198"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white" alt="X" /></a>
+  <a href="https://dev.to/ddsha441981"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;logo=devdotto&amp;logoColor=white" alt="dev.to" /></a>
+  <a href="https://medium.com/@ddsha441981"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&amp;logo=medium&amp;logoColor=white" alt="Medium" /></a>
+  <a href="https://crates.io/users/ddsha441981"><img src="https://img.shields.io/badge/Crates.io-FF6B00?style=for-the-badge&amp;logo=rust&amp;logoColor=white" alt="Crates.io" /></a>
 </p>
 
 ---
