@@ -11,10 +11,25 @@
     },
     {
       "pattern": "^https://komarev.com"
+    },
+    {
+      "pattern": "^https://crates.io"
+    },
+    {
+      "pattern": "^https://zenodo.org"
+    },
+    {
+      "pattern": "^https://doi.org"
+    },
+    {
+      "pattern": "^https://mvnrepository.com"
+    },
+    {
+      "pattern": "LICENSE"
     }
   ],
   "timeout": "10s",
   "retryOn429": true,
   "retryCount": 2,
-  "aliveStatusCodes": [200, 206]
+  "aliveStatusCodes": [200, 206, 403]
 }
