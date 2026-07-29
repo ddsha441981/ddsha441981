@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 500" width="100%">
+  <defs>
+    <!-- Dark Cyber Gradients -->
+    <linearGradient id="termBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06080d" />
+      <stop offset="50%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#21262d" />
+    </linearGradient>
+
+    <!-- Glowing Cyber Beam -->
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff7b00" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00f2fe" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#ff7b00" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="asciiGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .term-body { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace; font-size: 11.5px; }
+      
+      /* ASCII Image Animation Engine */
+      .ascii-art { font-family: 'JetBrains Mono', 'Cascadia Code', monospace; font-size: 10px; line-height: 1.15; font-weight: 600; }
+      
+      .ascii-head { fill: #ff7b00; animation: asciiPulse 3s ease-in-out infinite alternate; }
+      .ascii-mid { fill: #00f2fe; animation: asciiColorShift 4s ease-in-out infinite alternate; }
+      .ascii-base { fill: #00e676; animation: asciiPulse 3s ease-in-out infinite alternate 1.5s; }
+      .ascii-accent { fill: #bc8cff; }
+
+      @keyframes asciiPulse {
+        0% { opacity: 0.8; filter: drop-shadow(0 0 2px #ff7b00); }
+        100% { opacity: 1; filter: drop-shadow(0 0 8px #ff7b00); }
+      }
+
+      @keyframes asciiColorShift {
+        0% { fill: #00f2fe; filter: drop-shadow(0 0 2px #00f2fe); }
+        50% { fill: #3fb950; filter: drop-shadow(0 0 6px #3fb950); }
+        100% { fill: #ff7b00; filter: drop-shadow(0 0 8px #ff7b00); }
+      }
+
+      /* Scanning Cyber Laser Line Across ASCII Image */
+      .scan-beam { animation: scanLine 3.5s linear infinite; }
+      @keyframes scanLine {
+        0% { transform: translateY(0px); opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { transform: translateY(380px); opacity: 0; }
+      }
+
+      /* Fastfetch Info Colors */
+      .hdr-title { font-weight: bold; fill: #ff7b00; letter-spacing: 0.5px; }
+      .hdr-line { fill: #30363d; }
+      .lbl { fill: #8b949e; }
+      .lbl-key { fill: #ffa657; font-weight: bold; }
+      .val-bright { fill: #f0f6fc; font-weight: 600; }
+      .val-cyan { fill: #58a6ff; }
+      .val-green { fill: #3fb950; font-weight: bold; }
+      .val-orange { fill: #ffa657; }
+      .val-red { fill: #ff7b72; }
+      .val-purple { fill: #bc8cff; }
+
+      /* Sequential Fade In Animations */
+      .fade-l1 { animation: fadeIn 10s ease-in-out infinite 0.2s; }
+      .fade-l2 { animation: fadeIn 10s ease-in-out infinite 0.5s; }
+      .fade-l3 { animation: fadeIn 10s ease-in-out infinite 0.8s; }
+      .fade-l4 { animation: fadeIn 10s ease-in-out infinite 1.1s; }
+      .fade-l5 { animation: fadeIn 10s ease-in-out infinite 1.4s; }
+      .fade-l6 { animation: fadeIn 10s ease-in-out infinite 1.7s; }
+
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(2px); }
+        10%, 92% { opacity: 1; transform: translateY(0); }
+        98%, 100% { opacity: 0; }
+      }
+
+      .cursor { fill: #58a6ff; animation: blink 0.8s step-start infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="0" y="0" width="980" height="500" rx="12" ry="12" fill="url(#termBgGrad)" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Terminal Window Header -->
+  <rect x="0" y="0" width="980" height="38" rx="12" ry="12" fill="url(#headerGrad)" />
+  <line x1="0" y1="38" x2="980" y2="38" stroke="#30363d" stroke-width="1.5" />
+
+  <!-- Window Control Buttons -->
+  <circle cx="20" cy="19" r="5.5" fill="#ff5f56" />
+  <circle cx="38" cy="19" r="5.5" fill="#ffbd2e" />
+  <circle cx="56" cy="19" r="5.5" fill="#27c93f" />
+
+  <!-- Window Header Title -->
+  <text x="490" y="24" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#8b949e">
+    ddsha441981@ddsha441981-Latitude-7490: ~
+  </text>
+
+  <!-- ==================== LEFT COLUMN: ANIMATED ASCII PORTRAIT IMAGE ==================== -->
+  <g transform="translate(15, 45)">
+    <!-- Cyber Frame Box for Animated ASCII Art -->
+    <rect x="0" y="0" width="375" height="430" rx="8" ry="8" fill="#090c12" stroke="#21262d" stroke-width="1" />
+
+    <!-- Animated Cyber Matrix Beam Scanning Down the ASCII Image -->
+    <rect x="2" y="5" width="371" height="40" fill="url(#scanGrad)" class="scan-beam" />
+
+    <!-- Scanning Radar Status Tag -->
+    <g transform="translate(12, 22)">
+      <circle cx="6" cy="-4" r="3" fill="#00e676" />
+      <text x="16" y="0" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#00e676">SYS MATRIX: LIVE ANIMATED ASCII</text>
+    </g>
+
+    <!-- FULL ANIMATED ASCII ART IMAGE WITH NEON SHIFT & SCANNER GLOW -->
+    <g transform="translate(10, 35)" class="ascii-art">
+      <g class="ascii-head">
+        <text x="0" y="14">              g@M%@%%@N%Nw,,</text>
+        <text x="0" y="28">            ,M*|`||**%gNM=]mM%g||%N,</text>
+        <text x="0" y="42">           p!`  ' ! |'' ''||jhlj%w</text>
+        <text x="0" y="56">         ,@L `  ,,       ''!`|j%M]%M</text>
+        <text x="0" y="70">        ]j' ` .,wp@pw,   `.    ''''|%Wg</text>
+        <text x="0" y="84">      /{||]@@@@@@@@@@pp.         |||||</text>
+        <text x="0" y="98">     ` `']@@@@@@@@@@@@@@p      ...,``,</text>
+        <text x="0" y="112">       , :]%@@@@@%%%%%k%h '*||mkr    *</text>
+        <text x="0" y="126">       '  j%M`    |jkk'  ~nrn=|i    ;`</text>
+      </g>
+
+      <g class="ascii-mid">
+        <text x="0" y="140">        !  jrr*^`        `"!  L'':!</text>
+        <text x="0" y="154">        j  lp;,.  ,/ @@   ,;\nmy " ,~</text>
+        <text x="0" y="168">       i r @@@mmHM @@@ `^****M*,p ;,</text>
+        <text x="0" y="182">       | ]@@@HHH]g@M%%%%H,jmgpmb%  j</text>
+        <text x="0" y="196">       ;;%%%%k%@[,.n|;.;j%%k|k%%',[</text>
+        <text x="0" y="210">       H|%%k%%j%k||,;;j!!'|ij}]@</text>
+        <text x="0" y="224">       "djjmkL,"]][,,,,wwxw;|#kjk`</text>
+        <text x="0" y="238">         %;%km%%%%M%M|%%jkkii||[</text>
+        <text x="0" y="252">           kjj%%kkkl!||||||j|||"</text>
+      </g>
+
+      <g class="ascii-base">
+        <text x="0" y="266">            |jm%H@@b%%kkmk%i!,[</text>
+        <text x="0" y="280">            @p|j%%%%jkk|||j*`;j[</text>
+        <text x="0" y="294">           ]@@g|'''''' `  ,;j%k</text>
+        <text x="0" y="308">           @@@@mgmp;,,,,:jj%%k%</text>
+        <text x="0" y="322">         @@@@@@@@%%kgki!jjjj%k%@ .</text>
+        <text x="0" y="336">     . ^['' %@%@@HH%b%k{illjkjj%%% ;  `.</text>
+        <text x="0" y="350">    =[' `  . %HH%%%%H@gkilljjj%kk%".   'i</text>
+      </g>
+    </g>
+
+    <!-- Bottom Cyber Corner Decorator -->
+    <path d="M 10 415 L 40 415 M 10 415 L 10 395" stroke="#ff7b00" stroke-width="2" fill="none" />
+    <path d="M 365 415 L 335 415 M 365 415 L 365 395" stroke="#00f2fe" stroke-width="2" fill="none" />
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="405" y1="50" x2="405" y2="475" stroke="#21262d" stroke-width="1.5" />
+
+  <!-- ==================== RIGHT COLUMN: FASTFETCH SPECS & REAL GITHUB STATS ==================== -->
+  <g transform="translate(425, 58)" class="term-body">
+    
+    <!-- User Header -->
+    <g class="fade-l1">
+      <text x="0" y="16" class="hdr-title">ddsha441981@ddsha441981-Latitude-7490</text>
+      <text x="310" y="16" class="hdr-line">------------------------</text>
+    </g>
+
+    <g class="fade-l2">
+      <!-- OS & Role -->
+      <text x="0" y="38">
+        <tspan class="lbl-key">. OS:</tspan><tspan class="lbl"> ........................ </tspan><tspan class="val-bright">Ubuntu Linux x86_64</tspan>
+      </text>
+
+      <text x="0" y="56">
+        <tspan class="lbl-key">. Host:</tspan><tspan class="lbl"> ...................... </tspan><tspan class="val-bright">Dell Inc. Latitude 7490</tspan>
+      </text>
+
+      <text x="0" y="74">
+        <tspan class="lbl-key">. Role:</tspan><tspan class="lbl"> ...................... </tspan><tspan class="val-orange">Java &amp; Rust Systems Developer, AI Researcher</tspan>
+      </text>
+
+      <text x="0" y="92">
+        <tspan class="lbl-key">. Kernel:</tspan><tspan class="lbl"> .................... </tspan><tspan class="val-cyan">Linux 6.8.0 x86_64 / RISC-V Arch</tspan>
+      </text>
+
+      <text x="0" y="110">
+        <tspan class="lbl-key">. Motto:</tspan><tspan class="lbl"> ..................... </tspan><tspan class="val-purple">"Syntax is cheap, intuition is expensive."</tspan>
+      </text>
+    </g>
+
+    <!-- Tech Specs Section Header -->
+    <g class="fade-l3">
+      <text x="0" y="138" class="hdr-title">- Stack &amp; Specializations</text>
+      <text x="180" y="138" class="hdr-line">----------------------------------------</text>
+
+      <text x="0" y="158">
+        <tspan class="lbl-key">. Languages.Programming:</tspan><tspan class="lbl"> ...... </tspan><tspan class="val-bright">Rust, Java (Spring Boot, Struts), C++, Bash</tspan>
+      </text>
+
+      <text x="0" y="176">
+        <tspan class="lbl-key">. Languages.Computer:</tspan><tspan class="lbl"> ......... </tspan><tspan class="val-bright">HTML, CSS, JSON, YAML, x86-64 ASM</tspan>
+      </text>
+
+      <text x="0" y="194">
+        <tspan class="lbl-key">. Systems.Specializations:</tspan><tspan class="lbl"> .... </tspan><tspan class="val-green">SIMD, Lock-Free Atomics, Cache Locking, Bio-AI</tspan>
+      </text>
+
+      <text x="0" y="212">
+        <tspan class="lbl-key">. IDE &amp; Tooling:</tspan><tspan class="lbl"> .............. </tspan><tspan class="val-cyan">Neovim, VSCode, IntelliJ IDEA, Cargo, Dylint</tspan>
+      </text>
+    </g>
+
+    <!-- Top Featured Projects -->
+    <g class="fade-l4">
+      <text x="0" y="240" class="hdr-title">- Top Systems Projects &amp; Research</text>
+      <text x="245" y="240" class="hdr-line">-----------------------------</text>
+
+      <text x="0" y="260">
+        <tspan class="lbl-key">. Static Analyzer:</tspan><tspan class="lbl"> ........... </tspan><tspan class="val-orange">LineFault</tspan><tspan class="lbl"> (Cache-Line &amp; Memory Ordering Linting)</tspan>
+      </text>
+
+      <text x="0" y="278">
+        <tspan class="lbl-key">. CI Diagnostics:</tspan><tspan class="lbl"> ............ </tspan><tspan class="val-green">WireDoctor</tspan><tspan class="lbl"> (Spring Boot Context &amp; Cycle Gating)</tspan>
+      </text>
+
+      <text x="0" y="296">
+        <tspan class="lbl-key">. Bio-Inspired Edge AI:</tspan><tspan class="lbl"> ...... </tspan><tspan class="val-purple">Project Lethe</tspan><tspan class="lbl"> (Continual Learning / Zenodo DOI)</tspan>
+      </text>
+
+      <text x="0" y="314">
+        <tspan class="lbl-key">. Lock-Free Structure:</tspan><tspan class="lbl"> ....... </tspan><tspan class="val-cyan">CL-TDS</tspan><tspan class="lbl"> (1MB Cache-Locked Decay Sketch, 100M+ Ops)</tspan>
+      </text>
+    </g>
+
+    <!-- REAL GITHUB STATS SECTION -->
+    <g class="fade-l5">
+      <text x="0" y="342" class="hdr-title">- GitHub Stats</text>
+      <text x="110" y="342" class="hdr-line">----------------------------------------------------.--.</text>
+
+      <text x="0" y="362">
+        <tspan class="lbl-key">. Repos:</tspan><tspan class="lbl"> ... </tspan><tspan class="val-cyan">150</tspan><tspan class="lbl"> {Contributed: </tspan><tspan class="val-cyan">133</tspan><tspan class="lbl">} | </tspan><tspan class="lbl-key">Stars:</tspan><tspan class="lbl"> ............ </tspan><tspan class="val-cyan">15</tspan>
+      </text>
+
+      <text x="0" y="380">
+        <tspan class="lbl-key">. Commits:</tspan><tspan class="lbl"> ................. </tspan><tspan class="val-cyan">4,087</tspan><tspan class="lbl"> | </tspan><tspan class="lbl-key">Followers:</tspan><tspan class="lbl"> ........ </tspan><tspan class="val-cyan">11</tspan>
+      </text>
+
+      <text x="0" y="398">
+        <tspan class="lbl-key">. Lines of Code on GitHub:</tspan><tspan class="lbl">. </tspan><tspan class="val-cyan">708,765</tspan><tspan class="lbl"> ( </tspan><tspan class="val-green">812,490++</tspan><tspan class="lbl">, </tspan><tspan class="val-red">103,725--</tspan><tspan class="lbl"> )</tspan>
+      </text>
+    </g>
+
+    <!-- Active Terminal Prompt Line -->
+    <g class="fade-l6" transform="translate(0, 432)">
+      <text x="0" y="0">
+        <tspan class="val-green">ddsha441981@ddsha441981-Latitude-7490</tspan><tspan class="lbl">:</tspan><tspan class="val-cyan">~$</tspan> <tspan class="val-bright">cargo build --release --target=x86_64-unknown-linux-gnu</tspan><tspan class="cursor">_</tspan>
+      </text>
+    </g>
+
+  </g>
+</svg>

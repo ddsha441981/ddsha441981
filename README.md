@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./assets/hero-quantum-core.svg" alt="Rust Cyber Core Holographic Showcase" width="100%" />
+  <img src="./assets/systems-terminal_banner.svg" alt="Rust Cyber Core Holographic Showcase" width="100%" />
 </p>
 
 <p align="center">
