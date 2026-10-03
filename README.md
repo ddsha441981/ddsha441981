@@ -319,9 +319,10 @@ I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaip
 ## 📰 Latest Writing & Technical Articles
 
 <!-- BLOG-POST-LIST:START -->
-* 🦀 [Building Lock-Free 1MB Data Structures in Rust](https://dev.to/ddsha441981)
-* 🧠 [Bio-Inspired AI Memory Architectures: Pushing 4M Vectors/sec on CPU](https://medium.com/@ddsha441981)
-* ⚡ [Java 22 FFM API & Foreign Function Interoperability with Rust](https://dev.to/ddsha441981)
+- [A story about 40-second boot times, silent bean cycles, and the analysis layer nobody ships.](https://medium.com/@ddsha441981/a-story-about-40-second-boot-times-silent-bean-cycles-and-the-analysis-layer-nobody-ships-9634686ad693?source=rss-66771638592f------2)
+- [What is Zyloo and How to Use It — A Simple Guide](https://medium.com/@ddsha441981/what-is-zyloo-and-how-to-use-it-a-simple-guide-60c9d460d0e4?source=rss-66771638592f------2)
+- [LineFault: Catching the Concurrency Bugs Rust’s Compiler Won’t Tell You About](https://medium.com/@ddsha441981/linefault-catching-the-concurrency-bugs-rusts-compiler-won-t-tell-you-about-f8aaec4402f0?source=rss-66771638592f------2)
+- [I Built a Rate Limiter That Handles 100 Million Users in 1MB RAM — Java 22 + Rust](https://medium.com/@ddsha441981/i-built-a-rate-limiter-that-handles-100-million-users-in-1mb-ram-java-22-rust-923138d24e53?source=rss-66771638592f------2)
 <!-- BLOG-POST-LIST:END -->
 
 ---
