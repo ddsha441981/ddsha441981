@@ -1,368 +1,115 @@
+<!-- Profile README for @ddsha441981 — animated, GitHub-safe (CSS+SMIL SVG). Bump ?v= on an asset whenever you edit it, GitHub caches images. -->
 
 <p align="center">
-  <img src="./assets/systems-terminal_banner.svg" alt="Rust Cyber Core Holographic Showcase" width="100%" />
+  <img src="./assets/hero.svg?v=2" alt="Deendayal Kumawat — Rust systems engineer, Java backend developer, AI researcher" width="100%" />
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=FF6B00&background=0D1117&center=true&vCenter=true&random=false&width=750&height=50&lines=Hello!+I'm+Deendayal+Kumawat;I+write+code+that+waits+for+the+hardware;Syntax+is+cheap%2C+intuition+is+expensive;Fixed+Memory+Systems+and+Bio-Inspired+AI;Rust+Optimization+and+1MB%3D100M+Ops%2Fsec" alt="Typing SVG">
-  </a>
-</p>
-
-<p align="center">
-  <!-- Profile Views -->
   <a href="https://github.com/ddsha441981">
-    <img src="https://komarev.com/ghpvc/?username=ddsha441981&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views">
+    <img src="https://komarev.com/ghpvc/?username=ddsha441981&label=Profile%20Views&color=ff6b00&style=for-the-badge" alt="Profile Views" />
   </a>
-
-  <!-- Zenodo Downloads -->
-  <a href="https://doi.org/10.5281/zenodo.20360755">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fzenodo.org%2Fapi%2Frecords%2F20426838&query=%24.stats.downloads&label=Downloads&color=0e75b6&style=for-the-badge&logo=zenodo" alt="Research Downloads">
-  </a>
-
-  <!-- Zenodo Views -->
-  <a href="https://doi.org/10.5281/zenodo.20360755">
-    <img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fzenodo.org%2Fapi%2Frecords%2F20426838&query=%24.stats.unique_views&label=Views&color=orange&style=for-the-badge&logo=zenodo" alt="Research Views">
-  </a>
-
-  <!-- Crates.io Downloads -->
+  <img src="https://img.shields.io/github/followers/ddsha441981?label=Followers&style=for-the-badge&logo=github&color=ff6b00" alt="GitHub Followers" />
   <a href="https://crates.io/users/ddsha441981">
-    <img src="https://img.shields.io/badge/Crates.io-My%20Rust%20Crates-FF6B00?style=for-the-badge&logo=rust&logoColor=white" alt="Crates.io">
+    <img src="https://img.shields.io/badge/Crates.io-Published%20Crates-ff6b00?style=for-the-badge&logo=rust&logoColor=white" alt="Crates.io" />
   </a>
 </p>
 
-<!-- 📍 Quick Navigation -->
 <p align="center">
-  <a href="#status">Status</a> •
-  <a href="#about">About</a> •
-  <a href="#skills">What I Do Best</a> •
-  <a href="#projects">Projects</a> •
-  <a href="#tech-stack">Tech Stack</a> •
-  <a href="#benchmarks">Benchmarks</a> •
-  <a href="#writing">Writing</a> •
-  <a href="#metrics">Metrics</a> •
-  <a href="#connect">Connect</a>
+  <a href="#-what-i-do--what-drives-me">About</a> &nbsp;•&nbsp;
+  <a href="#-the-toolchain">Stack</a> &nbsp;•&nbsp;
+  <a href="#-featured-projects--research">Projects</a> &nbsp;•&nbsp;
+  <a href="#-lets-build-something-fast">Connect</a>
 </p>
 
 ---
 
-<a id="status"></a>
-## ⚡ Active Status
-
-| Focus | Details |
-|-------|---------|
-| 🔭 **Currently Building** | High-throughput lock-free Rust data structures (`CL-TDS`, `PulseMap`) & Static Analyzers (`LineFault`) |
-| 🛠️ **Systems Diagnostics** | Spring Boot Graph Analysis & Automated CI Gating (`WireDoctor`) |
-| 🧠 **Researching** | Bio-inspired cognitive AI & zero-forgetting edge architectures (`Project Lethe`) |
-| 🌱 **Learning** | RISC-V ISA design & hardware performance counters |
-| 💬 **Ask Me About** | Memory orderings, false-sharing analysis, SIMD vectorization, FFM/FFI & zero-copy I/O |
-
----
-
-<a id="about"></a>
-## 👨‍💻 About Me
-
-> **"Syntax is cheap, intuition is expensive."**
-
-I'm a **Java and Rust developer, systems engineer, and AI researcher** from Jaipur, India, obsessed with pushing hardware to its absolute limits. I enjoy turning "impossible" optimization problems into elegant, high-performance solutions—whether it's building scalable backend systems in **Java**, writing ultra-efficient low-level code in **Rust**, or designing bio-inspired AI architectures for edge intelligence.
-
-
----
-
-<a id="skills"></a>
-## 🔥 What I Do Best
-
-| Category | Skills |
-|----------|--------|
-| **⚡ Performance Optimization** | SIMD, Cache Locking, Lock-Free Atomics, Zero-Copy I/O |
-| **🦀 Systems Programming** | Rust, C++, Low-Level APIs |
-| **🔬 Compiler & Static Analysis** | AST, HIR, MIR Analysis, `LateContext` Linting, Monomorphization Hazards (`LineFault`) |
-| **🧠 AI & ML** | Bio-Inspired Architectures, Edge AI, Fixed-Memory Systems |
-| **🌐 Web & Backend** | Rust/Axum, Java/Spring Boot |
-| **🔧 Tools & DevOps** | Docker, Systemd, Windows Services, Cross-Platform Builds |
-
----
-
-## 📊 GitHub Metrics
+## 🧠 What I Do &amp; What Drives Me
 
 <p align="center">
-  <img src="https://img.shields.io/github/followers/ddsha441981?label=Followers&amp;style=for-the-badge&amp;logo=github&amp;color=FF6B00" alt="GitHub Followers" />
-  <a href="https://github.com/ddsha441981?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Public%20Repositories-FF6B00?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Repositories" /></a>
-  <a href="https://crates.io/users/ddsha441981"><img src="https://img.shields.io/badge/Crates.io-Published%20Packages-FF6B00?style=for-the-badge&amp;logo=rust&amp;logoColor=white" alt="Published Packages" /></a>
+  <img src="./assets/about-life.svg?v=2" alt="Capabilities, interests and stack" width="100%" />
 </p>
 
 ---
 
-<a id="projects"></a>
-## 🚀 Featured Top Projects & Research (⭐)
-
-<table width="100%">
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/linefault">🦀 LineFault</a></h3>
-      <p><sub><b>Rust Cache-Line & Memory Ordering Static Analyzer</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-Nightly-orange?style=flat-square&logo=rust&logoColor=white" />
-        <img src="https://img.shields.io/badge/Dylint-Static%20Analysis-blue?style=flat-square" />
-      </p>
-      <p><a href="docs/projects/linefault.md"><img src="https://img.shields.io/badge/Read%20Doc-FF6B00?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/wiredoctor">🩺 WireDoctor</a></h3>
-      <p><sub><b>Spring Boot Context Diagnostics & CI Gating</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Spring%20Boot-Diagnostics-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
-        <img src="https://img.shields.io/badge/CI%20Gates-Tarjan%20SCC-007ACC?style=flat-square" />
-      </p>
-      <p><a href="docs/projects/wiredoctor.md"><img src="https://img.shields.io/badge/Read%20Doc-6DB33F?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://doi.org/10.5281/zenodo.20426838">🧠 Project Lethe</a></h3>
-      <p><sub><b>Bio-Inspired Edge AI Continual Learning Engine</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-4M%20Vec%2Fs-FF6B00?style=flat-square&logo=rust&logoColor=white" />
-        <img src="https://img.shields.io/badge/Zenodo-DOI%20Paper-00539C?style=flat-square&logo=zenodo&logoColor=white" />
-      </p>
-      <p><a href="docs/projects/project-lethe.md"><img src="https://img.shields.io/badge/Read%20Doc-00539C?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/cl-tds">⚡ CL-TDS</a></h3>
-      <p><sub><b>1 MB Cache-Locked Temporal Decay Sketch</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-Lock--Free-FF6B00?style=flat-square&logo=rust&logoColor=white" />
-        <img src="https://img.shields.io/badge/100M%2B_Ops-1MB%20L3-green?style=flat-square" />
-      </p>
-      <p><a href="docs/projects/cl-tds.md"><img src="https://img.shields.io/badge/Read%20Doc-FF6B00?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-  </tr>
-</table>
-
-### 🛠️ Systems Libraries & Core Utilities
-
-<table width="100%">
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/pulse_map_bindings">⚡ PulseMap</a></h3>
-      <p><sub><b>Fixed-Capacity Hash Map with LFU+LRU</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-Eviction-FF6B00?style=flat-square&logo=rust&logoColor=white" />
-      </p>
-      <p><a href="docs/projects/pulse-map.md"><img src="https://img.shields.io/badge/Read%20Doc-E10098?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/sketchboot">⚡ Sketchboot</a></h3>
-      <p><sub><b>Spring Boot Rate Limiter via FFM & Rust</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Java_22-FFM-blue?style=flat-square&logo=openjdk&logoColor=white" />
-      </p>
-      <p><a href="docs/projects/sketchboot.md"><img src="https://img.shields.io/badge/Read%20Doc-6DB33F?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/struct-mapper">⚡ Struct Mapper</a></h3>
-      <p><sub><b>Zero-Boilerplate Rust Struct Derive</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-Proc%20Macro-007ACC?style=flat-square&logo=rust&logoColor=white" />
-      </p>
-      <p><a href="docs/projects/struct-mapper.md"><img src="https://img.shields.io/badge/Read%20Doc-007ACC?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/voxora">🎙️ Voxora Service</a></h3>
-      <p><sub><b>Audio Capture & Keyring Daemon</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-Systemd-orange?style=flat-square&logo=rust&logoColor=white" />
-      </p>
-      <p><a href="docs/projects/voxora.md"><img src="https://img.shields.io/badge/Read%20Doc-FF6B00?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/GodseYe">👁️ GodseYe</a></h3>
-      <p><sub><b>Tauri 2.0 DWM Stealth & VAD Engine</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Tauri-2.0-FFC107?style=flat-square&logo=tauri&logoColor=black" />
-        <img src="https://img.shields.io/badge/Rust-Win32%20DWM-orange?style=flat-square&logo=rust&logoColor=white" />
-      </p>
-      <p><a href="docs/projects/godseye.md"><img src="https://img.shields.io/badge/Read%20Doc-FFC107?style=flat-square&logo=readme&logoColor=black" /></a></p>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3><a href="https://github.com/ddsha441981/MAGNETIC-MATH-UNIVERSE">🧲 Math Universe</a></h3>
-      <p><sub><b>Esoteric Hardware Computation</b></sub></p>
-      <p>
-        <img src="https://img.shields.io/badge/Rust-Esoteric-8A2BE2?style=flat-square" />
-      </p>
-      <p><a href="docs/projects/magnetic-math-universe.md"><img src="https://img.shields.io/badge/Read%20Doc-8A2BE2?style=flat-square&logo=readme&logoColor=white" /></a></p>
-    </td>
-  </tr>
-</table>
-
----
-
-<a id="tech-stack"></a>
-## 🛠️ Skills & Technical Stack
-
-<table width="100%">
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3>🦀 Low-Level & Systems</h3>
-      <table align="center">
-        <tr>
-          <td align="center"><img src="https://skillicons.dev/icons?i=rust&theme=dark" width="46"/><br><sub><b>Rust</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=cpp&theme=dark" width="46"/><br><sub><b>C++</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=zig&theme=dark" width="46"/><br><sub><b>Zig</b></sub></td>
-        </tr>
-      </table>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3>☕ High-Level & Backend</h3>
-      <table align="center">
-        <tr>
-          <td align="center"><img src="https://skillicons.dev/icons?i=java&theme=dark" width="46"/><br><sub><b>Java</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="46"/><br><sub><b>JavaScript</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="46"/><br><sub><b>TypeScript</b></sub></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3>⚡ Frameworks & Tools</h3>
-      <table align="center">
-        <tr>
-          <td align="center"><img src="https://skillicons.dev/icons?i=spring&theme=dark" width="44"/><br><sub><b>Spring Boot</b></sub></td>
-          <td align="center"><img src="https://img.shields.io/badge/Struts-B82012?style=for-the-badge&logo=apache&logoColor=white" height="28"/><br><sub><b>Struts</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=java&theme=dark" width="44"/><br><sub><b>Servlet</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=tauri&theme=dark" width="44"/><br><sub><b>Tauri</b></sub></td>
-        </tr>
-      </table>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3>💻 Operating Systems</h3>
-      <table align="center">
-        <tr>
-          <td align="center"><img src="https://skillicons.dev/icons?i=linux&theme=dark" width="42"/><br><sub><b>Linux</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=ubuntu&theme=dark" width="42"/><br><sub><b>Ubuntu</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=kali&theme=dark" width="42"/><br><sub><b>Kali</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=windows&theme=dark" width="42"/><br><sub><b>Windows</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=apple&theme=dark" width="42"/><br><sub><b>macOS</b></sub></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td width="500" align="center" valign="top">
-      <h3>🎨 Frontend Dev</h3>
-      <table align="center">
-        <tr>
-          <td align="center"><img src="https://skillicons.dev/icons?i=html&theme=dark" width="42"/><br><sub><b>HTML5</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=css&theme=dark" width="42"/><br><sub><b>CSS3</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=js&theme=dark" width="42"/><br><sub><b>JavaScript</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="42"/><br><sub><b>TypeScript</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=react&theme=dark" width="42"/><br><sub><b>React</b></sub></td>
-        </tr>
-      </table>
-    </td>
-    <td width="500" align="center" valign="top">
-      <h3>🔧 DevOps & CI/CD</h3>
-      <table align="center">
-        <tr>
-          <td align="center"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="44"/><br><sub><b>Docker</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=git&theme=dark" width="44"/><br><sub><b>Git</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=githubactions&theme=dark" width="44"/><br><sub><b>Actions</b></sub></td>
-          <td align="center"><img src="https://skillicons.dev/icons?i=bash&theme=dark" width="44"/><br><sub><b>Bash</b></sub></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-<a id="benchmarks"></a>
-### ⚡ Systems Optimization Benchmarks
-
-| Optimization | What I Do With It | Target Metric |
-|--------------|--------------------|---------------|
-| **Static Cache Analysis** | Detect cache-line false sharing & memory ordering bugs (LineFault) | `0 Compiler ICEs` |
-| **CI Diagnostic Gating** | Tarjan SCC dependency graph analysis & context validation (WireDoctor) | `Zero Cyclic Deadlocks` |
-| **SIMD Vectorization** | Parallelize memory ops via AVX-512 | `>100M Ops/sec` |
-| **Cache Locking** | Keep data entirely in L3 Cache (1MB max) | `Zero Cache Misses` |
-| **Lock-Free Atomics** | Zero-mutex concurrent data structures | `0 Lock Contention` |
-| **FFM / FFI** | Native Rust bindings for Java 22 / Node.js | `<1.2ns Overhead` |
-| **Bio-Inspired Memory** | Selective memory decay algorithm (Project Lethe) | `4M Vectors/sec CPU` |
-
-<br/>
+## 🛠️ The Toolchain
 
 <p align="center">
-  <img src="./assets/systems-terminal.svg" alt="Live Systems Verification Terminal Output" width="100%" />
+  <img src="./assets/stack.svg?v=2" alt="Tech stack orbiting a core" width="100%" />
 </p>
 
 ---
 
-<a id="metrics"></a>
-## 📈 GitHub Metrics & Ecosystem
+## 🪪 Developer ID
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ddsha441981&theme=react-dark&bg_color=0d1117&color=ff6b00&line=0e75b6&point=ff6b00&area=true&hide_border=true" width="100%" alt="Deendayal's GitHub Activity Graph" />
-</p>
-
-### 🐍 Contribution Eating Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ddsha441981/ddsha441981/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Grid Snake" width="100%" />
+  <img src="./assets/id-dashboard.svg?v=2" alt="Developer ID badge — Deendayal Kumawat, Rust systems engineer" width="100%" />
 </p>
 
 ---
 
-<a id="writing"></a>
-## 📰 Latest Writing & Technical Articles
+## 🚀 Featured Projects &amp; Research
 
-<!-- BLOG-POST-LIST:START -->
-* 🦀 [Building Lock-Free 1MB Data Structures in Rust](https://dev.to/ddsha441981)
-* 🧠 [Bio-Inspired AI Memory Architectures: Pushing 4M Vectors/sec on CPU](https://medium.com/@ddsha441981)
-* ⚡ [Java 22 FFM API & Foreign Function Interoperability with Rust](https://dev.to/ddsha441981)
-<!-- BLOG-POST-LIST:END -->
-
----
-
-<a id="connect"></a>
-## 📫 Connect With Me
+<!-- Borderless cards (no table = no cell grid). Each card is its own 3D SVG in
+     assets/projects/ and the whole card links to its deep-dive doc in
+     assets/projects/docs/<slug>.md. The source row links each repo/paper.
+     Edit PROJECTS in tools/gen_projects.py and re-run. -->
 <p align="center">
-  <a href="mailto:deendayal_kumawat@outlook.com"><img src="https://img.shields.io/badge/Email-0078D4?style=for-the-badge&amp;logo=microsoftoutlook&amp;logoColor=white" alt="Email" /></a>
-  <a href="https://linkedin.com/in/deendayal-kumawat"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/ddsha441981"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub" /></a>
-  <a href="https://x.com/ddsha44198"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&amp;logo=x&amp;logoColor=white" alt="X" /></a>
-  <a href="https://dev.to/ddsha441981"><img src="https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&amp;logo=devdotto&amp;logoColor=white" alt="dev.to" /></a>
-  <a href="https://medium.com/@ddsha441981"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&amp;logo=medium&amp;logoColor=white" alt="Medium" /></a>
-  <a href="https://crates.io/users/ddsha441981"><img src="https://img.shields.io/badge/Crates.io-FF6B00?style=for-the-badge&amp;logo=rust&amp;logoColor=white" alt="Crates.io" /></a>
+  <a href="./assets/projects/docs/project-lethe.md"><img src="./assets/projects/project-lethe.svg?v=2" width="31%" alt="Project Lethe - Bio-inspired edge-AI continual-learning engine."/></a>
+  <a href="./assets/projects/docs/cl-tds.md"><img src="./assets/projects/cl-tds.svg?v=2" width="31%" alt="CL-TDS - 1 MB cache-locked temporal decay sketch."/></a>
+  <a href="./assets/projects/docs/wiredoctor.md"><img src="./assets/projects/wiredoctor.svg?v=2" width="31%" alt="WireDoctor - Spring Boot context diagnostics &amp; CI gating."/></a>
+</p>
+<p align="center">
+  <a href="./assets/projects/docs/linefault.md"><img src="./assets/projects/linefault.svg?v=2" width="31%" alt="LineFault - Rust cache-line &amp; memory-ordering static analyzer."/></a>
+  <a href="./assets/projects/docs/pulse-map.md"><img src="./assets/projects/pulse-map.svg?v=2" width="31%" alt="PulseMap - Fixed-capacity hash map, LFU+LRU eviction."/></a>
+  <a href="./assets/projects/docs/sketchboot.md"><img src="./assets/projects/sketchboot.svg?v=2" width="31%" alt="Sketchboot - Spring Boot rate limiter via FFM &amp; Rust."/></a>
+</p>
+<p align="center">
+  <a href="./assets/projects/docs/struct-mapper.md"><img src="./assets/projects/struct-mapper.svg?v=2" width="31%" alt="Struct Mapper - Zero-boilerplate Rust struct derive macro."/></a>
+  <a href="./assets/projects/docs/voxora.md"><img src="./assets/projects/voxora.svg?v=2" width="31%" alt="Voxora - Audio capture &amp; keyring systemd daemon."/></a>
+  <a href="./assets/projects/docs/godseye.md"><img src="./assets/projects/godseye.svg?v=2" width="31%" alt="GodsEye - Tauri 2.0 DWM stealth &amp; VAD engine."/></a>
+</p>
+<p align="center">
+  <a href="./assets/projects/docs/magnetic-math-universe.md"><img src="./assets/projects/magnetic-math-universe.svg?v=2" width="31%" alt="Math Universe - Esoteric hardware computation."/></a>
+</p>
+<p align="center"><sub>source&nbsp;code</sub></p>
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.20426838"><img src="https://img.shields.io/badge/Project%20Lethe-a371f7?style=flat-square&logo=rust&logoColor=0d1117" alt="Project Lethe source"/></a>
+  <a href="./assets/projects/docs/cl-tds.md"><img src="https://img.shields.io/badge/CL--TDS-ff6b00?style=flat-square&logo=rust&logoColor=0d1117" alt="CL-TDS source"/></a>
+  <a href="https://github.com/ddsha441981/wiredoctor"><img src="https://img.shields.io/badge/WireDoctor-6DB33F?style=flat-square&logo=openjdk&logoColor=0d1117" alt="WireDoctor source"/></a>
+  <a href="./assets/projects/docs/linefault.md"><img src="https://img.shields.io/badge/LineFault-ff6b00?style=flat-square&logo=rust&logoColor=0d1117" alt="LineFault source"/></a>
+  <a href="https://github.com/ddsha441981/pulse_map"><img src="https://img.shields.io/badge/PulseMap-ff6b00?style=flat-square&logo=rust&logoColor=0d1117" alt="PulseMap source"/></a>
+  <a href="./assets/projects/docs/sketchboot.md"><img src="https://img.shields.io/badge/Sketchboot-6DB33F?style=flat-square&logo=openjdk&logoColor=0d1117" alt="Sketchboot source"/></a>
+  <a href="https://github.com/ddsha441981/struct-mapper"><img src="https://img.shields.io/badge/Struct%20Mapper-ff6b00?style=flat-square&logo=rust&logoColor=0d1117" alt="Struct Mapper source"/></a>
+  <a href="https://github.com/ddsha441981/voxora_service"><img src="https://img.shields.io/badge/Voxora-ff6b00?style=flat-square&logo=rust&logoColor=0d1117" alt="Voxora source"/></a>
+  <a href="https://github.com/ddsha441981/GodseYe_WinX64"><img src="https://img.shields.io/badge/GodsEye-24C8DB?style=flat-square&logo=rust&logoColor=0d1117" alt="GodsEye source"/></a>
+  <a href="https://github.com/ddsha441981/MAGNETIC-MATH-UNIVERSE"><img src="https://img.shields.io/badge/Math%20Universe-a371f7?style=flat-square&logo=rust&logoColor=0d1117" alt="Math Universe source"/></a>
 </p>
 
 ---
 
-## 🌟 Fun Facts About Me
-1. I once built a hash map that fits **entirely in L3 cache** (1MB)!
-2. My favorite optimization rule: **"If you don't need it, don't store it."**
-3. I have a secret dream of building a custom RISC-V CPU for streaming data processing.
 
----
+
+## 📫 Let's Build Something Fast
 
 <p align="center">
-  <i>
-    "The best code is the one that the hardware loves." ✨<br>
-    — Deendayal Kumawat
-  </i>
+  <a href="https://github.com/ddsha441981"><img src="./assets/connect-header.svg?v=1" alt="Connect with Deendayal - Rust systems engineer, Java backend developer, AI researcher" width="100%" /></a>
 </p>
 
----
+<!-- Each tile is its own SVG in assets/connect/ and sits inside an <a>, so every link is clickable.
+     Edit LINKS in tools/gen_connect.py and re-run to change them. -->
 <p align="center">
-  <i>Sponsoring supports independent research in bio-inspired AI architectures (Project Lethe) and zero-dependency high-throughput Rust crates.</i><br><br>
-  <a href="https://github.com/sponsors/ddsha441981">
-    <img src="https://img.shields.io/badge/Support%20My%20Research-GitHub%20Sponsors-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="GitHub Sponsors">
-  </a>
+  <a href="https://github.com/ddsha441981"><img src="./assets/connect/github.svg?v=1" width="24%" alt="GitHub - @ddsha441981"/></a>
+  <a href="https://linkedin.com/in/deendayal-kumawat"><img src="./assets/connect/linkedin.svg?v=1" width="24%" alt="LinkedIn - deendayal-kumawat"/></a>
+  <a href="https://x.com/ddsha44198"><img src="./assets/connect/x.svg?v=1" width="24%" alt="X / Twitter - @ddsha44198"/></a>
+  <a href="mailto:deendayal_kumawat@outlook.com"><img src="./assets/connect/email.svg?v=1" width="24%" alt="Email - deendayal_kumawat@outlook.com"/></a>
+</p>
+<p align="center">
+  <a href="https://dev.to/ddsha441981"><img src="./assets/connect/devto.svg?v=1" width="24%" alt="dev.to - @ddsha441981"/></a>
+  <a href="https://medium.com/@ddsha441981"><img src="./assets/connect/medium.svg?v=1" width="24%" alt="Medium - @ddsha441981"/></a>
+  <a href="https://crates.io/users/ddsha441981"><img src="./assets/connect/crates.svg?v=1" width="24%" alt="Crates.io - /users/ddsha441981"/></a>
+  <a href="https://github.com/sponsors/ddsha441981"><img src="./assets/connect/sponsor.svg?v=1" width="24%" alt="Sponsor - Support the research"/></a>
 </p>
 
-
-
----
+<p align="center"><i>"The best code is the one that the hardware loves." — 
+Deendayal Kumawat</i></p>
 
