@@ -1,7 +1,11 @@
-<!-- Profile README for @ddsha441981 — animated, GitHub-safe (CSS+SMIL SVG). Bump ?v= on an asset whenever you edit it, GitHub caches images. -->
+<!-- Profile README for @ddsha441981 — animated, GitHub-safe (CSS+SMIL SVG). Bump ?v= on an asset whenever you edit it, GitHub caches images.
+     Every SVG has a dark file (x.svg) and a light twin (x-light.svg); <picture> picks one per GitHub theme. -->
 
 <p align="center">
-  <img src="./assets/hero.svg?v=2" alt="Deendayal Kumawat — Rust systems engineer, Java backend developer, AI researcher" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg?v=3">
+    <img src="./assets/hero.svg?v=3" alt="Deendayal Kumawat — Rust systems engineer, Java backend developer, AI researcher" width="100%" />
+  </picture>
 </p>
 
 <p align="center">
@@ -26,7 +30,10 @@
 ## 🧠 What I Do &amp; What Drives Me
 
 <p align="center">
-  <img src="./assets/about-life.svg?v=2" alt="Capabilities, interests and stack" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/about-life-light.svg?v=3">
+    <img src="./assets/about-life.svg?v=3" alt="Capabilities, interests and stack" width="100%" />
+  </picture>
 </p>
 
 ---
@@ -34,7 +41,10 @@
 ## 🛠️ The Toolchain
 
 <p align="center">
-  <img src="./assets/stack.svg?v=2" alt="Tech stack orbiting a core" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg?v=3">
+    <img src="./assets/stack.svg?v=3" alt="Tech stack orbiting a core" width="100%" />
+  </picture>
 </p>
 
 ---
@@ -42,7 +52,10 @@
 ## 🪪 Developer ID
 
 <p align="center">
-  <img src="./assets/id-dashboard.svg?v=2" alt="Developer ID badge — Deendayal Kumawat, Rust systems engineer" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="./assets/id-dashboard-light.svg?v=3">
+    <img src="./assets/id-dashboard.svg?v=3" alt="Developer ID badge — Deendayal Kumawat, Rust systems engineer" width="100%" />
+  </picture>
 </p>
 
 ---
@@ -50,26 +63,27 @@
 ## 🚀 Featured Projects &amp; Research
 
 <!-- Borderless cards (no table = no cell grid). Each card is its own 3D SVG in
-     assets/projects/ and the whole card links to its deep-dive doc in
-     assets/projects/docs/<slug>.md. The source row links each repo/paper.
+     assets/projects/ (dark) + <slug>-light.svg (light, swapped by <picture>) and the whole card links to its deep-dive doc in
+     assets/projects/docs/<slug>.md. The source chips link each repo/paper,
+     coloured by the card accent + language logo (shields.io, flat-square).
      Edit PROJECTS in tools/gen_projects.py and re-run. -->
 <p align="center">
-  <a href="./assets/projects/docs/project-lethe.md"><img src="./assets/projects/project-lethe.svg?v=2" width="31%" alt="Project Lethe - Bio-inspired edge-AI continual-learning engine."/></a>
-  <a href="./assets/projects/docs/cl-tds.md"><img src="./assets/projects/cl-tds.svg?v=2" width="31%" alt="CL-TDS - 1 MB cache-locked temporal decay sketch."/></a>
-  <a href="./assets/projects/docs/wiredoctor.md"><img src="./assets/projects/wiredoctor.svg?v=2" width="31%" alt="WireDoctor - Spring Boot context diagnostics &amp; CI gating."/></a>
+  <a href="./assets/projects/docs/project-lethe.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/project-lethe-light.svg?v=3"><img src="./assets/projects/project-lethe.svg?v=3" width="31%" alt="Project Lethe - Bio-inspired edge-AI continual-learning engine."/></picture></a>
+  <a href="./assets/projects/docs/cl-tds.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/cl-tds-light.svg?v=3"><img src="./assets/projects/cl-tds.svg?v=3" width="31%" alt="CL-TDS - 1 MB cache-locked temporal decay sketch."/></picture></a>
+  <a href="./assets/projects/docs/wiredoctor.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/wiredoctor-light.svg?v=3"><img src="./assets/projects/wiredoctor.svg?v=3" width="31%" alt="WireDoctor - Spring Boot context diagnostics &amp; CI gating."/></picture></a>
 </p>
 <p align="center">
-  <a href="./assets/projects/docs/linefault.md"><img src="./assets/projects/linefault.svg?v=2" width="31%" alt="LineFault - Rust cache-line &amp; memory-ordering static analyzer."/></a>
-  <a href="./assets/projects/docs/pulse-map.md"><img src="./assets/projects/pulse-map.svg?v=2" width="31%" alt="PulseMap - Fixed-capacity hash map, LFU+LRU eviction."/></a>
-  <a href="./assets/projects/docs/sketchboot.md"><img src="./assets/projects/sketchboot.svg?v=2" width="31%" alt="Sketchboot - Spring Boot rate limiter via FFM &amp; Rust."/></a>
+  <a href="./assets/projects/docs/linefault.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/linefault-light.svg?v=3"><img src="./assets/projects/linefault.svg?v=3" width="31%" alt="LineFault - Rust cache-line &amp; memory-ordering static analyzer."/></picture></a>
+  <a href="./assets/projects/docs/pulse-map.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/pulse-map-light.svg?v=3"><img src="./assets/projects/pulse-map.svg?v=3" width="31%" alt="PulseMap - Fixed-capacity hash map, LFU+LRU eviction."/></picture></a>
+  <a href="./assets/projects/docs/sketchboot.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/sketchboot-light.svg?v=3"><img src="./assets/projects/sketchboot.svg?v=3" width="31%" alt="Sketchboot - Spring Boot rate limiter via FFM &amp; Rust."/></picture></a>
 </p>
 <p align="center">
-  <a href="./assets/projects/docs/struct-mapper.md"><img src="./assets/projects/struct-mapper.svg?v=2" width="31%" alt="Struct Mapper - Zero-boilerplate Rust struct derive macro."/></a>
-  <a href="./assets/projects/docs/voxora.md"><img src="./assets/projects/voxora.svg?v=2" width="31%" alt="Voxora - Audio capture &amp; keyring systemd daemon."/></a>
-  <a href="./assets/projects/docs/godseye.md"><img src="./assets/projects/godseye.svg?v=2" width="31%" alt="GodsEye - Tauri 2.0 DWM stealth &amp; VAD engine."/></a>
+  <a href="./assets/projects/docs/struct-mapper.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/struct-mapper-light.svg?v=3"><img src="./assets/projects/struct-mapper.svg?v=3" width="31%" alt="Struct Mapper - Zero-boilerplate Rust struct derive macro."/></picture></a>
+  <a href="./assets/projects/docs/voxora.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/voxora-light.svg?v=3"><img src="./assets/projects/voxora.svg?v=3" width="31%" alt="Voxora - Audio capture &amp; keyring systemd daemon."/></picture></a>
+  <a href="./assets/projects/docs/godseye.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/godseye-light.svg?v=3"><img src="./assets/projects/godseye.svg?v=3" width="31%" alt="GodsEye - Tauri 2.0 DWM stealth &amp; VAD engine."/></picture></a>
 </p>
 <p align="center">
-  <a href="./assets/projects/docs/magnetic-math-universe.md"><img src="./assets/projects/magnetic-math-universe.svg?v=2" width="31%" alt="Math Universe - Esoteric hardware computation."/></a>
+  <a href="./assets/projects/docs/magnetic-math-universe.md"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/projects/magnetic-math-universe-light.svg?v=3"><img src="./assets/projects/magnetic-math-universe.svg?v=3" width="31%" alt="Math Universe - Esoteric hardware computation."/></picture></a>
 </p>
 <p align="center"><sub>source&nbsp;code</sub></p>
 <p align="center">
@@ -92,22 +106,22 @@
 ## 📫 Let's Build Something Fast
 
 <p align="center">
-  <a href="https://github.com/ddsha441981"><img src="./assets/connect-header.svg?v=1" alt="Connect with Deendayal - Rust systems engineer, Java backend developer, AI researcher" width="100%" /></a>
+  <a href="https://github.com/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect-header-light.svg?v=3"><img src="./assets/connect-header.svg?v=3" alt="Connect with Deendayal - Rust systems engineer, Java backend developer, AI researcher" width="100%" /></picture></a>
 </p>
 
 <!-- Each tile is its own SVG in assets/connect/ and sits inside an <a>, so every link is clickable.
      Edit LINKS in tools/gen_connect.py and re-run to change them. -->
 <p align="center">
-  <a href="https://github.com/ddsha441981"><img src="./assets/connect/github.svg?v=1" width="24%" alt="GitHub - @ddsha441981"/></a>
-  <a href="https://linkedin.com/in/deendayal-kumawat"><img src="./assets/connect/linkedin.svg?v=1" width="24%" alt="LinkedIn - deendayal-kumawat"/></a>
-  <a href="https://x.com/ddsha44198"><img src="./assets/connect/x.svg?v=1" width="24%" alt="X / Twitter - @ddsha44198"/></a>
-  <a href="mailto:deendayal_kumawat@outlook.com"><img src="./assets/connect/email.svg?v=1" width="24%" alt="Email - deendayal_kumawat@outlook.com"/></a>
+  <a href="https://github.com/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/github-light.svg?v=3"><img src="./assets/connect/github.svg?v=3" width="24%" alt="GitHub - @ddsha441981"/></picture></a>
+  <a href="https://linkedin.com/in/deendayal-kumawat"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/linkedin-light.svg?v=3"><img src="./assets/connect/linkedin.svg?v=3" width="24%" alt="LinkedIn - deendayal-kumawat"/></picture></a>
+  <a href="https://x.com/ddsha44198"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/x-light.svg?v=3"><img src="./assets/connect/x.svg?v=3" width="24%" alt="X / Twitter - @ddsha44198"/></picture></a>
+  <a href="mailto:deendayal_kumawat@outlook.com"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/email-light.svg?v=3"><img src="./assets/connect/email.svg?v=3" width="24%" alt="Email - deendayal_kumawat@outlook.com"/></picture></a>
 </p>
 <p align="center">
-  <a href="https://dev.to/ddsha441981"><img src="./assets/connect/devto.svg?v=1" width="24%" alt="dev.to - @ddsha441981"/></a>
-  <a href="https://medium.com/@ddsha441981"><img src="./assets/connect/medium.svg?v=1" width="24%" alt="Medium - @ddsha441981"/></a>
-  <a href="https://crates.io/users/ddsha441981"><img src="./assets/connect/crates.svg?v=1" width="24%" alt="Crates.io - /users/ddsha441981"/></a>
-  <a href="https://github.com/sponsors/ddsha441981"><img src="./assets/connect/sponsor.svg?v=1" width="24%" alt="Sponsor - Support the research"/></a>
+  <a href="https://dev.to/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/devto-light.svg?v=3"><img src="./assets/connect/devto.svg?v=3" width="24%" alt="dev.to - @ddsha441981"/></picture></a>
+  <a href="https://medium.com/@ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/medium-light.svg?v=3"><img src="./assets/connect/medium.svg?v=3" width="24%" alt="Medium - @ddsha441981"/></picture></a>
+  <a href="https://crates.io/users/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/crates-light.svg?v=3"><img src="./assets/connect/crates.svg?v=3" width="24%" alt="Crates.io - /users/ddsha441981"/></picture></a>
+  <a href="https://github.com/sponsors/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="./assets/connect/sponsor-light.svg?v=3"><img src="./assets/connect/sponsor.svg?v=3" width="24%" alt="Sponsor - Support the research"/></picture></a>
 </p>
 
 <p align="center"><i>"The best code is the one that the hardware loves." — 
