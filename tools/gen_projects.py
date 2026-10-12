@@ -4,6 +4,9 @@
 Usage:  python gen_projects.py [assets_dir] [readme_snippet.md]
         (defaults: assets/projects  and  projects_table.md)
 
+Writes BOTH themes: <slug>.svg (dark, unchanged) and <slug>-light.svg (light).
+The README snippet wraps each card in <a><picture> so the link keeps working in both.
+
 Edit PROJECTS below, run again, bump ?v= in the README.
 Layout: 3 columns. Outer columns tilt inward, the middle sits flat,
 so the grid folds toward the centre like an open book (fake perspective).
@@ -14,7 +17,7 @@ import sys
 import textwrap
 from xml.sax.saxutils import escape
 
-VERSION = 2
+VERSION = 3
 CW, CH = 400, 220           # card face
 VW, VH = 450, 292           # svg canvas
 FX, FY = 25, 22             # card face origin on the canvas
@@ -64,7 +67,38 @@ def lum(h):
     return 0.2126 * r + 0.7152 * g + 0.0722 * b
 
 
-def card_svg(idx, slug, emoji, title, desc, lang, metric, acc):
+# ---- theme tokens: only colours differ, geometry/animation is identical ----
+def _slab_dark(acc):
+    return mix(acc, (0, 0, 0), 0.72)
+
+
+def _slab_light(acc):
+    return mix(acc, (255, 255, 255), 0.5)
+
+
+THEMES = {
+    "dark": dict(
+        face1="#1b2535", face2="#0d1320", glow_op="0.34",
+        shine="#fff", shine_op="0.16", scan="#fff", scan_op="0.035",
+        shadow_op="0.55", spill_op="0.28", hi_op="0.35",
+        title="#f0f6fc", desc="#aab6c3", rule="#1f2a3a",
+        chip_bg="#0b1018", chip_txt="#e6edf3",
+        slab=_slab_dark, ramp=(255, 255, 255), ramp_k=0.06,
+    ),
+    "light": dict(
+        face1="#ffffff", face2="#edf1f6", glow_op="0.16",
+        shine="ACC", shine_op="0.10", scan="#000", scan_op="0.025",
+        shadow_op="0.22", spill_op="0.16", hi_op="0.9",
+        title="#1f2328", desc="#57606a", rule="#d0d7de",
+        chip_bg="#ffffff", chip_txt="#1f2328",
+        slab=_slab_light, ramp=(0, 0, 0), ramp_k=0.08,
+    ),
+}
+
+
+def card_svg(idx, slug, emoji, title, desc, lang, metric, acc, theme="dark"):
+    T = THEMES[theme]
+    shine_c = T["shine"].replace("ACC", acc)
     col = idx % 3                                  # 3-column layout: outer cards fold toward the centre
     tilt = TILT if col == 0 else (-TILT if col == 2 else 0.0)
     sx = -1 if col == 0 else (1 if col == 2 else 0)  # slab thickness on the outer side; middle sits flat
@@ -72,10 +106,11 @@ def card_svg(idx, slug, emoji, title, desc, lang, metric, acc):
     ink = "#0d1117" if lum(acc) > 0.38 else "#ffffff"
     dark = mix(acc, (0, 0, 0), 0.72)
     mid = mix(acc, (0, 0, 0), 0.5)
+    slab = T["slab"](acc)
 
     lines = textwrap.wrap(desc, 46)[:2]
     desc_svg = "".join(
-        f'<text x="26" y="{116 + i * 21}" class="sans" font-size="14" fill="#aab6c3">{escape(t)}</text>'
+        f'<text x="26" y="{116 + i * 21}" class="sans" font-size="14" fill="{T["desc"]}">{escape(t)}</text>'
         for i, t in enumerate(lines))
 
     # chips
@@ -83,9 +118,9 @@ def card_svg(idx, slug, emoji, title, desc, lang, metric, acc):
     met_w = 24 + len(metric) * 7.2
     chips = (
         f'<g transform="translate(26 172)">'
-        f'<rect width="{lang_w:.0f}" height="28" rx="14" fill="#0b1018" stroke="{acc}" stroke-opacity="0.55"/>'
+        f'<rect width="{lang_w:.0f}" height="28" rx="14" fill="{T["chip_bg"]}" stroke="{acc}" stroke-opacity="0.55"/>'
         f'<circle cx="15" cy="14" r="4" fill="{acc}"><animate attributeName="opacity" values="1;0.3;1" dur="2.2s" begin="-{idx * 0.37:.2f}s" repeatCount="indefinite"/></circle>'
-        f'<text x="26" y="18.5" class="b" font-size="12" fill="#e6edf3">{escape(lang)}</text></g>'
+        f'<text x="26" y="18.5" class="b" font-size="12" fill="{T["chip_txt"]}">{escape(lang)}</text></g>'
         f'<g transform="translate({26 + lang_w + 10:.0f} 172)">'
         f'<rect width="{met_w:.0f}" height="28" rx="14" fill="{acc}"/>'
         f'<rect width="{met_w:.0f}" height="28" rx="14" fill="url(#{p}hi)"/>'
@@ -97,7 +132,7 @@ def card_svg(idx, slug, emoji, title, desc, lang, metric, acc):
     n = 9
     for k in range(n, 0, -1):
         dx, dy = sx * DEPTH_X * k / n, DEPTH_Y * k / n
-        shade = mix(dark, (255, 255, 255), 0.0 + 0.06 * (n - k) / n)
+        shade = mix(slab, T["ramp"], 0.0 + T["ramp_k"] * (n - k) / n)
         layers.append(f'<rect x="{FX + dx:.1f}" y="{FY + dy:.1f}" width="{CW}" height="{CH}" rx="18" fill="{shade}"/>')
     layers.append(f'<rect x="{FX + sx * DEPTH_X:.1f}" y="{FY + DEPTH_Y:.1f}" width="{CW}" height="{CH}" rx="18" fill="none" stroke="{acc}" stroke-opacity="0.55" stroke-width="1.2"/>')
 
@@ -112,21 +147,21 @@ def card_svg(idx, slug, emoji, title, desc, lang, metric, acc):
       .b{{font-family:'JetBrains Mono',ui-monospace,'Courier New',monospace;font-weight:700;}}
       .e{{font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;}}
     </style>
-    <linearGradient id="{p}face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2535"/><stop offset="1" stop-color="#0d1320"/></linearGradient>
-    <radialGradient id="{p}glow" cx="0.85" cy="0.1" r="0.8"><stop offset="0" stop-color="{acc}" stop-opacity="0.34"/><stop offset="1" stop-color="{acc}" stop-opacity="0"/></radialGradient>
+    <linearGradient id="{p}face" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{T["face1"]}"/><stop offset="1" stop-color="{T["face2"]}"/></linearGradient>
+    <radialGradient id="{p}glow" cx="0.85" cy="0.1" r="0.8"><stop offset="0" stop-color="{acc}" stop-opacity="{T["glow_op"]}"/><stop offset="1" stop-color="{acc}" stop-opacity="0"/></radialGradient>
     <linearGradient id="{p}hi" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0.18"/></linearGradient>
-    <linearGradient id="{p}shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="{p}shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{shine_c}" stop-opacity="0"/><stop offset="0.5" stop-color="{shine_c}" stop-opacity="{T["shine_op"]}"/><stop offset="1" stop-color="{shine_c}" stop-opacity="0"/></linearGradient>
     <linearGradient id="{p}tile" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{mix(acc, (255, 255, 255), 0.25)}"/><stop offset="1" stop-color="{mid}"/></linearGradient>
-    <pattern id="{p}scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" fill-opacity="0.035"/></pattern>
+    <pattern id="{p}scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="{T["scan"]}" fill-opacity="{T["scan_op"]}"/></pattern>
     <clipPath id="{p}clip"><rect x="{FX}" y="{FY}" width="{CW}" height="{CH}" rx="18"/></clipPath>
     <filter id="{p}b" x="-30%" y="-80%" width="160%" height="260%"><feGaussianBlur stdDeviation="9"/></filter>
     <filter id="{p}b3" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
   </defs>
 
   <!-- floor shadow + coloured light spill -->
-  <ellipse cx="{cx + sx * 6:.0f}" cy="{FY + CH + DEPTH_Y + 14}" rx="{CW * 0.46:.0f}" ry="9" fill="#000" opacity="0.55" filter="url(#{p}b)">
+  <ellipse cx="{cx + sx * 6:.0f}" cy="{FY + CH + DEPTH_Y + 14}" rx="{CW * 0.46:.0f}" ry="9" fill="#000" opacity="{T["shadow_op"]}" filter="url(#{p}b)">
     <animate attributeName="rx" values="{CW * 0.46:.0f};{CW * 0.40:.0f};{CW * 0.46:.0f}" dur="5s" begin="-{phase:.1f}s" repeatCount="indefinite"/></ellipse>
-  <ellipse cx="{cx:.0f}" cy="{FY + CH + DEPTH_Y + 12}" rx="{CW * 0.34:.0f}" ry="7" fill="{acc}" opacity="0.28" filter="url(#{p}b)"/>
+  <ellipse cx="{cx:.0f}" cy="{FY + CH + DEPTH_Y + 12}" rx="{CW * 0.34:.0f}" ry="7" fill="{acc}" opacity="{T["spill_op"]}" filter="url(#{p}b)"/>
 
   <g transform="translate({cx:.1f} {cy:.1f}) skewY({tilt}) scale(0.97 1) translate({-cx:.1f} {-cy:.1f})">
     <g>
@@ -151,7 +186,7 @@ def card_svg(idx, slug, emoji, title, desc, lang, metric, acc):
       </g>
 
       <!-- top-edge highlight + neon border -->
-      <path d="M{FX + 18},{FY + 1.5} H{FX + CW - 18}" stroke="#fff" stroke-opacity="0.35" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M{FX + 18},{FY + 1.5} H{FX + CW - 18}" stroke="#fff" stroke-opacity="{T["hi_op"]}" stroke-width="1.2" stroke-linecap="round"/>
       <rect x="{FX}" y="{FY}" width="{CW}" height="{CH}" rx="18" fill="none" stroke="{acc}" stroke-width="3" opacity="0.4" filter="url(#{p}b3)"/>
       <rect x="{FX}" y="{FY}" width="{CW}" height="{CH}" rx="18" fill="none" stroke="{acc}" stroke-opacity="0.8" stroke-width="1.4"/>
 
@@ -165,10 +200,10 @@ def card_svg(idx, slug, emoji, title, desc, lang, metric, acc):
       </g>
 
       <!-- title -->
-      <text x="{FX + 104}" y="{FY + 50}" class="sans" font-size="22" font-weight="800" fill="#f0f6fc">{escape(title)}</text>
+      <text x="{FX + 104}" y="{FY + 50}" class="sans" font-size="22" font-weight="800" fill="{T["title"]}">{escape(title)}</text>
       <rect x="{FX + 104}" y="{FY + 60}" width="{min(150, 18 + len(title) * 9)}" height="3" rx="1.5" fill="{acc}"/>
       <g transform="translate({FX} {FY - 2})">{desc_svg}</g>
-      <line x1="{FX + 26}" y1="{FY + 150}" x2="{FX + CW - 26}" y2="{FY + 150}" stroke="#1f2a3a"/>
+      <line x1="{FX + 26}" y1="{FY + 150}" x2="{FX + CW - 26}" y2="{FY + 150}" stroke="{T["rule"]}"/>
       <g transform="translate({FX} {FY})">{chips}</g>
 
       <!-- corner brackets -->
@@ -191,7 +226,11 @@ def table_md(items, per_row=3):
         imgs = []
         for pr in items[r:r + per_row]:
             slug, emoji, title, desc, lang, metric, acc, link, doc, label = pr
-            imgs.append(f'  <a href="./assets/projects/docs/{slug}.md"><img src="./assets/projects/{slug}.svg?v={VERSION}" width="31%" alt="{escape(title)} - {escape(desc)}"/></a>')
+            imgs.append(
+                f'  <a href="./assets/projects/docs/{slug}.md"><picture>'
+                f'<source media="(prefers-color-scheme: light)" srcset="./assets/projects/{slug}-light.svg?v={VERSION}">'
+                f'<img src="./assets/projects/{slug}.svg?v={VERSION}" width="31%" alt="{escape(title)} - {escape(desc)}"/>'
+                f'</picture></a>')
         rows.append('<p align="center">\n' + "\n".join(imgs) + '\n</p>')
     chips = "\n".join(
         f'  <a href="{pr[7]}"><img src="https://img.shields.io/badge/{shield(pr[2])}-{pr[6].lstrip("#")}'
@@ -200,7 +239,7 @@ def table_md(items, per_row=3):
         for pr in items)
     rows.append('<p align="center"><sub>source&nbsp;code</sub></p>\n<p align="center">\n' + chips + '\n</p>')
     return ('<!-- Borderless cards (no table = no cell grid). Each card is its own 3D SVG in\n'
-            '     assets/projects/ and the whole card links to its deep-dive doc in\n'
+            '     assets/projects/ (dark) + <slug>-light.svg (light, swapped by <picture>) and the whole card links to its deep-dive doc in\n'
             '     assets/projects/docs/<slug>.md. The source chips link each repo/paper,\n'
             '     coloured by the card accent + language logo (shields.io, flat-square).\n'
             '     Edit PROJECTS in tools/gen_projects.py and re-run. -->\n' + "\n".join(rows) + "\n")
@@ -212,8 +251,9 @@ if __name__ == "__main__":
     os.makedirs(out_dir, exist_ok=True)
     for i, pr in enumerate(PROJECTS):
         slug, emoji, title, desc, lang, metric, acc = pr[:7]
-        with open(os.path.join(out_dir, f"{slug}.svg"), "w", encoding="utf-8") as fh:
-            fh.write(card_svg(i, slug, emoji, title, desc, lang, metric, acc))
+        for theme, suffix in (("dark", ""), ("light", "-light")):
+            with open(os.path.join(out_dir, f"{slug}{suffix}.svg"), "w", encoding="utf-8") as fh:
+                fh.write(card_svg(i, slug, emoji, title, desc, lang, metric, acc, theme))
     with open(snippet, "w", encoding="utf-8") as fh:
         fh.write(table_md(PROJECTS))
-    print(f"wrote {len(PROJECTS)} cards to {out_dir} and {snippet}")
+    print(f"wrote {len(PROJECTS)} cards x 2 themes to {out_dir} and {snippet}")

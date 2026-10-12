@@ -6,6 +6,7 @@
 <title>Deendayal Kumawat — Profile Preview</title>
 <style>
   :root{--bg:#0d1117;--panel:#010409;--text:#e6edf3;--muted:#8b98a5;--line:#1f2a3a;--accent:#ff6b00;}
+  @media (prefers-color-scheme: light){:root{--bg:#ffffff;--panel:#f6f8fa;--text:#1f2328;--muted:#656d76;--line:#d0d7de;--accent:#c24f00;}}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--text);
     font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;
@@ -25,15 +26,50 @@
 <body>
   <div class="wrap">
     <h1>GitHub Profile Preview — local render</h1>
-    <p class="sub">renders exactly like github.com/ddsha441981 · CSS + SMIL only</p>
-    <img src="assets/hero.svg?v=2" alt="hero"/>
-    <img src="assets/about-life.svg?v=2" alt="about"/>
-    <img src="assets/stack.svg?v=2" alt="stack"/>
-    <img src="assets/id-dashboard.svg?v=2" alt="id badge"/>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 4px;margin:0 0 22px"><img src="assets/projects/project-lethe.svg?v=2" alt="project-lethe" style="margin:0;border-radius:0"/><img src="assets/projects/cl-tds.svg?v=2" alt="cl-tds" style="margin:0;border-radius:0"/><img src="assets/projects/wiredoctor.svg?v=2" alt="wiredoctor" style="margin:0;border-radius:0"/><img src="assets/projects/linefault.svg?v=2" alt="linefault" style="margin:0;border-radius:0"/><img src="assets/projects/pulse-map.svg?v=2" alt="pulse-map" style="margin:0;border-radius:0"/><img src="assets/projects/sketchboot.svg?v=2" alt="sketchboot" style="margin:0;border-radius:0"/><img src="assets/projects/struct-mapper.svg?v=2" alt="struct-mapper" style="margin:0;border-radius:0"/><img src="assets/projects/voxora.svg?v=2" alt="voxora" style="margin:0;border-radius:0"/><img src="assets/projects/godseye.svg?v=2" alt="godseye" style="margin:0;border-radius:0"/><img src="assets/projects/magnetic-math-universe.svg?v=2" alt="magnetic-math-universe" style="margin:0;border-radius:0"/></div>
-    <img src="assets/connect-header.svg?v=1" alt="connect header"/>
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0 2px;margin:0 0 22px"><img src="assets/connect/github.svg?v=1" alt="github" style="margin:0;border-radius:0"/><img src="assets/connect/linkedin.svg?v=1" alt="linkedin" style="margin:0;border-radius:0"/><img src="assets/connect/x.svg?v=1" alt="x" style="margin:0;border-radius:0"/><img src="assets/connect/email.svg?v=1" alt="email" style="margin:0;border-radius:0"/><img src="assets/connect/devto.svg?v=1" alt="devto" style="margin:0;border-radius:0"/><img src="assets/connect/medium.svg?v=1" alt="medium" style="margin:0;border-radius:0"/><img src="assets/connect/crates.svg?v=1" alt="crates" style="margin:0;border-radius:0"/><img src="assets/connect/sponsor.svg?v=1" alt="sponsor" style="margin:0;border-radius:0"/></div>
-    <footer>Reload to replay the intro animations. Swap the photo later with <code>python tools/embed_photo.py photo.jpg assets/id-dashboard.svg</code>.</footer>
+    <p class="sub">renders like github.com/ddsha441981 · toggle OS dark/light theme to switch</p>
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg?v=3">
+      <img src="assets/hero.svg?v=3" alt="hero"/>
+    </picture>
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="assets/about-life-light.svg?v=3">
+      <img src="assets/about-life.svg?v=3" alt="about"/>
+    </picture>
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.svg?v=3">
+      <img src="assets/stack.svg?v=3" alt="stack"/>
+    </picture>
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="assets/id-dashboard-light.svg?v=3">
+      <img src="assets/id-dashboard.svg?v=3" alt="id badge"/>
+    </picture>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 4px;margin:0 0 22px">
+      <a href="assets/projects/docs/project-lethe.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/project-lethe-light.svg?v=3"><img src="assets/projects/project-lethe.svg?v=3" alt="project-lethe" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/cl-tds.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/cl-tds-light.svg?v=3"><img src="assets/projects/cl-tds.svg?v=3" alt="cl-tds" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/wiredoctor.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/wiredoctor-light.svg?v=3"><img src="assets/projects/wiredoctor.svg?v=3" alt="wiredoctor" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/linefault.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/linefault-light.svg?v=3"><img src="assets/projects/linefault.svg?v=3" alt="linefault" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/pulse-map.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/pulse-map-light.svg?v=3"><img src="assets/projects/pulse-map.svg?v=3" alt="pulse-map" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/sketchboot.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/sketchboot-light.svg?v=3"><img src="assets/projects/sketchboot.svg?v=3" alt="sketchboot" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/struct-mapper.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/struct-mapper-light.svg?v=3"><img src="assets/projects/struct-mapper.svg?v=3" alt="struct-mapper" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/voxora.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/voxora-light.svg?v=3"><img src="assets/projects/voxora.svg?v=3" alt="voxora" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/godseye.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/godseye-light.svg?v=3"><img src="assets/projects/godseye.svg?v=3" alt="godseye" style="margin:0;border-radius:0"/></picture></a>
+      <a href="assets/projects/docs/magnetic-math-universe.md"><picture><source media="(prefers-color-scheme: light)" srcset="assets/projects/magnetic-math-universe-light.svg?v=3"><img src="assets/projects/magnetic-math-universe.svg?v=3" alt="magnetic-math-universe" style="margin:0;border-radius:0"/></picture></a>
+    </div>
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="assets/connect-header-light.svg?v=3">
+      <img src="assets/connect-header.svg?v=3" alt="connect header"/>
+    </picture>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0 2px;margin:0 0 22px">
+      <a href="https://github.com/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/github-light.svg?v=3"><img src="assets/connect/github.svg?v=3" alt="github" style="margin:0;border-radius:0"/></picture></a>
+      <a href="https://linkedin.com/in/deendayal-kumawat"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/linkedin-light.svg?v=3"><img src="assets/connect/linkedin.svg?v=3" alt="linkedin" style="margin:0;border-radius:0"/></picture></a>
+      <a href="https://x.com/ddsha44198"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/x-light.svg?v=3"><img src="assets/connect/x.svg?v=3" alt="x" style="margin:0;border-radius:0"/></picture></a>
+      <a href="mailto:deendayal_kumawat@outlook.com"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/email-light.svg?v=3"><img src="assets/connect/email.svg?v=3" alt="email" style="margin:0;border-radius:0"/></picture></a>
+      <a href="https://dev.to/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/devto-light.svg?v=3"><img src="assets/connect/devto.svg?v=3" alt="devto" style="margin:0;border-radius:0"/></picture></a>
+      <a href="https://medium.com/@ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/medium-light.svg?v=3"><img src="assets/connect/medium.svg?v=3" alt="medium" style="margin:0;border-radius:0"/></picture></a>
+      <a href="https://crates.io/users/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/crates-light.svg?v=3"><img src="assets/connect/crates.svg?v=3" alt="crates" style="margin:0;border-radius:0"/></picture></a>
+      <a href="https://github.com/sponsors/ddsha441981"><picture><source media="(prefers-color-scheme: light)" srcset="assets/connect/sponsor-light.svg?v=3"><img src="assets/connect/sponsor.svg?v=3" alt="sponsor" style="margin:0;border-radius:0"/></picture></a>
+    </div>
+    <footer>Toggle OS dark/light to switch themes. Reload to replay animations. Swap photo: <code>python tools/embed_photo.py photo.jpg assets/id-dashboard.svg</code></footer>
   </div>
 </body>
 </html>
